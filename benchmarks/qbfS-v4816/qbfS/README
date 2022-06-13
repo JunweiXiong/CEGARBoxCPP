@@ -1,0 +1,16 @@
+This directory contains modal terms that have been used as
+benchmarks for TANCS-2000 [1], translated into a different format.
+
+
+Run Spartacus or ftt with the option
+
+    --intohyloFile=FILENAME
+
+
+REFERENCES
+==========
+
+[1] Fabio Massacci and Francesco M. Donini. Design and results
+     of TANCS-2000 non-classical (modal) systems comparison.
+     In Roy Dyckhoff, editor, TABLEAUX, volume 1847 of Lecture
+     Notes in Computer Science, pages 52.56. Springer, 2000.

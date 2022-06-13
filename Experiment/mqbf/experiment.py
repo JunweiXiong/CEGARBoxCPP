@@ -141,48 +141,54 @@ def run_experiment(haskell_files, cpp_files):
 
 
 if __name__ == "__main__":
-    files = find_files()
-    haskell_optim_times, haskell_times, cpp_times = run_experiment(*files)
-    haskell_optim_all = []
-    haskell_all = []
-    cpp_all = []
-    for group in cpp_times:
-        haskell_optim_all.extend(haskell_optim_times[group])
-        haskell_all.extend(haskell_times[group])
-        cpp_all.extend(cpp_times[group])
-        print(group)
-        print(haskell_optim_times[group])
-        print(haskell_times[group])
-        print(cpp_times[group])
+    haskell_files, cpp_files = find_files()
+    print(haskell_files.keys())
 
-        h_o_a = np.cumsum(np.sort(
-            np.array(list(filter(lambda x: x < TIMEOUT, haskell_optim_times[group])))))
-        h_u_a = np.cumsum(
-            np.sort(np.array(list(filter(lambda x: x < TIMEOUT, haskell_times[group])))))
-        c_a = np.cumsum(
-            np.sort(np.array(list(filter(lambda x: x < TIMEOUT, cpp_times[group])))))
-        plt.figure()
-        plt.plot(h_o_a, np.arange(h_o_a.size), label="Haskell Optimised")
-        plt.plot(h_u_a, np.arange(h_u_a.size), label="Haskell Unoptimised")
-        plt.plot(c_a, np.arange(c_a.size), label="C++")
-        plt.xlabel("Time (seconds)")
-        plt.legend()
-        plt.title(group + " Benchmarks (K)")
-        plt.ylabel("Problems Solved")
-        plt.savefig("K" + group + ".png")
-    print("Total")
-    print(haskell_optim_all)
-    print(haskell_all)
-    print(cpp_all)
-    plt.figure()
-    plt.plot(np.cumsum(np.sort(np.array(haskell_optim_all))),
-             np.arange(len(haskell_optim_all)), label="Haskell Optimised")
-    plt.plot(np.cumsum(np.sort(np.array(haskell_all))),
-             np.arange(len(haskell_all)), label="Haskell Unoptimised")
-    plt.xlabel("Time (seconds)")
-    plt.plot(np.cumsum(np.sort(np.array(cpp_all))),
-             np.arange(len(cpp_all)), label="C++")
-    plt.legend()
-    plt.title("MQBF Benchmarks")
-    plt.ylabel("Problems Solved")
-    plt.savefig("K" + "overall.png")
+
+
+
+    # files = find_files()
+    # haskell_optim_times, haskell_times, cpp_times = run_experiment(*files)
+    # haskell_optim_all = []
+    # haskell_all = []
+    # cpp_all = []
+    # for group in cpp_times:
+    #     haskell_optim_all.extend(haskell_optim_times[group])
+    #     haskell_all.extend(haskell_times[group])
+    #     cpp_all.extend(cpp_times[group])
+    #     print(group)
+    #     print(haskell_optim_times[group])
+    #     print(haskell_times[group])
+    #     print(cpp_times[group])
+
+    #     h_o_a = np.cumsum(np.sort(
+    #         np.array(list(filter(lambda x: x < TIMEOUT, haskell_optim_times[group])))))
+    #     h_u_a = np.cumsum(
+    #         np.sort(np.array(list(filter(lambda x: x < TIMEOUT, haskell_times[group])))))
+    #     c_a = np.cumsum(
+    #         np.sort(np.array(list(filter(lambda x: x < TIMEOUT, cpp_times[group])))))
+    #     plt.figure()
+    #     plt.plot(h_o_a, np.arange(h_o_a.size), label="Haskell Optimised")
+    #     plt.plot(h_u_a, np.arange(h_u_a.size), label="Haskell Unoptimised")
+    #     plt.plot(c_a, np.arange(c_a.size), label="C++")
+    #     plt.xlabel("Time (seconds)")
+    #     plt.legend()
+    #     plt.title(group + " Benchmarks (K)")
+    #     plt.ylabel("Problems Solved")
+    #     plt.savefig("K" + group + ".png")
+    # print("Total")
+    # print(haskell_optim_all)
+    # print(haskell_all)
+    # print(cpp_all)
+    # plt.figure()
+    # plt.plot(np.cumsum(np.sort(np.array(haskell_optim_all))),
+    #          np.arange(len(haskell_optim_all)), label="Haskell Optimised")
+    # plt.plot(np.cumsum(np.sort(np.array(haskell_all))),
+    #          np.arange(len(haskell_all)), label="Haskell Unoptimised")
+    # plt.xlabel("Time (seconds)")
+    # plt.plot(np.cumsum(np.sort(np.array(cpp_all))),
+    #          np.arange(len(cpp_all)), label="C++")
+    # plt.legend()
+    # plt.title("MQBF Benchmarks")
+    # plt.ylabel("Problems Solved")
+    # plt.savefig("K" + "overall.png")

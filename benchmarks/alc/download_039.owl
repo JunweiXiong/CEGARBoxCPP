@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://obo.sourceforge.net/so.owl#"
+     xml:base="http://obo.sourceforge.net/so.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:so="http://obo.sourceforge.net/so.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://obo.sourceforge.net/so.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://obo.sourceforge.net/so.owl#ChloroplastSequence -->
+
+    <owl:Class rdf:about="http://obo.sourceforge.net/so.owl#ChloroplastSequence">
+        <rdfs:subClassOf rdf:resource="http://obo.sourceforge.net/so.owl#SequenceOrganelleLocation"/>
+        <owl:disjointWith rdf:resource="http://obo.sourceforge.net/so.owl#MitochondrialSequence"/>
+        <owl:disjointWith rdf:resource="http://obo.sourceforge.net/so.owl#NuclearSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://obo.sourceforge.net/so.owl#DNA -->
+
+    <owl:Class rdf:about="http://obo.sourceforge.net/so.owl#DNA">
+        <rdfs:subClassOf rdf:resource="http://obo.sourceforge.net/so.owl#PolymerType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://obo.sourceforge.net/so.owl#Exon -->
+
+    <owl:Class rdf:about="http://obo.sourceforge.net/so.owl#Exon">
+        <rdfs:subClassOf rdf:resource="http://obo.sourceforge.net/so.owl#LocatedSequenceFeature"/>
+        <owl:disjointWith rdf:resource="http://obo.sourceforge.net/so.owl#Intron"/>
+        <owl:disjointWith rdf:resource="http://obo.sourceforge.net/so.owl#Promoter"/>
+        <owl:disjointWith rdf:resource="http://obo.sourceforge.net/so.owl#Terminator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://obo.sourceforge.net/so.owl#Gene -->
+
+    <owl:Class rdf:about="http://obo.sourceforge.net/so.owl#Gene">
+        <rdfs:subClassOf rdf:resource="http://obo.sourceforge.net/so.owl#LocatedSequenceFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://obo.sourceforge.net/so.owl#Intron -->
+
+    <owl:Class rdf:about="http://obo.sourceforge.net/so.owl#Intron">
+        <rdfs:subClassOf rdf:resource="http://obo.sourceforge.net/so.owl#LocatedSequenceFeature"/>
+        <owl:disjointWith rdf:resource="http://obo.sourceforge.net/so.owl#Promoter"/>
+        <owl:disjointWith rdf:resource="http://obo.sourceforge.net/so.owl#Terminator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://obo.sourceforge.net/so.owl#LocatedSequenceFeature -->
+
+    <owl:Class rdf:about="http://obo.sourceforge.net/so.owl#LocatedSequenceFeature">
+        <rdfs:subClassOf rdf:resource="http://obo.sourceforge.net/so.owl#Sequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://obo.sourceforge.net/so.owl#MitochondrialSequence -->
+
+    <owl:Class rdf:about="http://obo.sourceforge.net/so.owl#MitochondrialSequence">
+        <rdfs:subClassOf rdf:resource="http://obo.sourceforge.net/so.owl#SequenceOrganelleLocation"/>
+        <owl:disjointWith rdf:resource="http://obo.sourceforge.net/so.owl#NuclearSequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://obo.sourceforge.net/so.owl#NuclearSequence -->
+
+    <owl:Class rdf:about="http://obo.sourceforge.net/so.owl#NuclearSequence">
+        <rdfs:subClassOf rdf:resource="http://obo.sourceforge.net/so.owl#SequenceOrganelleLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://obo.sourceforge.net/so.owl#PolymerType -->
+
+    <owl:Class rdf:about="http://obo.sourceforge.net/so.owl#PolymerType">
+        <rdfs:subClassOf rdf:resource="http://obo.sourceforge.net/so.owl#SequenceAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://obo.sourceforge.net/so.owl#Promoter -->
+
+    <owl:Class rdf:about="http://obo.sourceforge.net/so.owl#Promoter">
+        <rdfs:subClassOf rdf:resource="http://obo.sourceforge.net/so.owl#LocatedSequenceFeature"/>
+        <owl:disjointWith rdf:resource="http://obo.sourceforge.net/so.owl#Terminator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://obo.sourceforge.net/so.owl#Protein -->
+
+    <owl:Class rdf:about="http://obo.sourceforge.net/so.owl#Protein">
+        <rdfs:subClassOf rdf:resource="http://obo.sourceforge.net/so.owl#PolymerType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://obo.sourceforge.net/so.owl#RNA -->
+
+    <owl:Class rdf:about="http://obo.sourceforge.net/so.owl#RNA">
+        <rdfs:subClassOf rdf:resource="http://obo.sourceforge.net/so.owl#PolymerType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://obo.sourceforge.net/so.owl#Sequence -->
+
+    <owl:Class rdf:about="http://obo.sourceforge.net/so.owl#Sequence">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extract from  OBO Sequence Ontology</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://obo.sourceforge.net/so.owl#SequenceAttribute -->
+
+    <owl:Class rdf:about="http://obo.sourceforge.net/so.owl#SequenceAttribute">
+        <rdfs:subClassOf rdf:resource="http://obo.sourceforge.net/so.owl#Sequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://obo.sourceforge.net/so.owl#SequenceOrganelleLocation -->
+
+    <owl:Class rdf:about="http://obo.sourceforge.net/so.owl#SequenceOrganelleLocation">
+        <rdfs:subClassOf rdf:resource="http://obo.sourceforge.net/so.owl#SequenceAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://obo.sourceforge.net/so.owl#Terminator -->
+
+    <owl:Class rdf:about="http://obo.sourceforge.net/so.owl#Terminator">
+        <rdfs:subClassOf rdf:resource="http://obo.sourceforge.net/so.owl#LocatedSequenceFeature"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.0.0.1450) http://owlapi.sourceforge.net -->
+

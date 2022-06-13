@@ -42,7 +42,7 @@ private:
   shared_ptr<Minisat::vec<Minisat::Lit>>
   convertAssumptions(literal_set assumptions);
   literal_set
-  convertConflictToAssumps(Minisat::vec<Minisat::Lit> &conflictLits);
+  convertConflictToAssumps(Minisat::LSet &conflictLits);
 
   bool modelSatisfiesAssump(Literal assumption);
 
