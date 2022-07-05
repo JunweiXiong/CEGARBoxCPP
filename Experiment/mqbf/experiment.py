@@ -10,16 +10,17 @@ def find_files():
     cpp_files = {}
     for root, subdirs, files in os.walk(os.getcwd()):
         parts = root.split("/")
-        if len(parts) > 5:
-            group = parts[5]
-            if group not in haskell_files:
-                haskell_files[group] = []
-                cpp_files[group] = []
+        if "benchmarks" not in parts or parts[-1] == "benchmarks":
+            continue
+        benchmark_group = parts[parts.index("benchmarks")+1]
+        if benchmark_group not in haskell_files:
+            haskell_files[benchmark_group] = []
+            cpp_files[benchmark_group] = []
         for file in files:
             if file.endswith(".hf"):
-                haskell_files[group].append(root+"/"+file)
+                haskell_files[benchmark_group].append(root+"/"+file)
             elif file.endswith(".cf"):
-                cpp_files[group].append(root+"/"+file)
+                cpp_files[benchmark_group].append(root+"/"+file)
     for key in haskell_files:
         haskell_files[key].sort()
         cpp_files[key].sort()
@@ -30,10 +31,12 @@ TIMEOUT = 40
 
 
 def compare_times(haskell_file, cpp_file):
+    base_path = os.getcwd()[:-11]
+
     haskell_start = time.time()
     try:
         haskell_result = subprocess.check_output(
-            ["/home/users/u6956078/.cabal/bin/CEGARBox", haskell_file], timeout=TIMEOUT).decode("utf-8").strip()
+            [os.path.expanduser('~')+"/.cabal/bin/CEGARBox", haskell_file], timeout=TIMEOUT).decode("utf-8").strip()
     except subprocess.TimeoutExpired:
         haskell_result = "timeout"
     except Exception as e:
@@ -44,7 +47,7 @@ def compare_times(haskell_file, cpp_file):
     haskell_optim_start = time.time()
     try:
         haskell_optim_result = subprocess.check_output(
-            ["/home/users/u6956078/.cabal/bin/CEGARBoxOptim", haskell_file], timeout=TIMEOUT).decode("utf-8").strip()
+            [os.path.expanduser('~')+"/.cabal/bin/CEGARBoxOptim", haskell_file], timeout=TIMEOUT).decode("utf-8").strip()
     except subprocess.TimeoutExpired:
         haskell_optim_result = "timeout"
     except Exception as e:
@@ -55,7 +58,7 @@ def compare_times(haskell_file, cpp_file):
     cpp_start = time.time()
     try:
         cpp_result = subprocess.check_output(
-            ["/home/users/u6956078/mqbf/main", "-f", cpp_file], timeout=TIMEOUT).decode("utf-8").strip()
+            ["./main", "-f", cpp_file], timeout=TIMEOUT).decode("utf-8").strip()
     except subprocess.TimeoutExpired:
         cpp_result = "timeout"
     except Exception as e:
@@ -68,8 +71,12 @@ def compare_times(haskell_file, cpp_file):
         print("Bad result on", cpp_file, "cpp got", cpp_result,
               "while haskell got", haskell_result)
 
-    return cpp_end - cpp_start, haskell_end - haskell_start, haskell_optim_end - haskell_optim_start, cpp_result, haskell_result, haskell_optim_result
+    cpp_time = cpp_end - cpp_start
+    haskell_time = haskell_end - haskell_start
+    haskell_optim_time = haskell_optim_end - haskell_optim_start
 
+    return cpp_time, haskell_time, haskell_optim_time, cpp_result, haskell_result, haskell_optim_result
+  
 
 def run_experiment(haskell_files, cpp_files):
     print("Starting experiment")
@@ -141,54 +148,59 @@ def run_experiment(haskell_files, cpp_files):
 
 
 if __name__ == "__main__":
+
     haskell_files, cpp_files = find_files()
-    print(haskell_files.keys())
 
+    # test them seperately 
+    keys = list(haskell_files.keys())
+    print(keys)
+    for k in keys:
+        if k != "3CNF":
+            haskell_files.pop(k)
+            cpp_files.pop(k)
 
+    haskell_optim_times, haskell_times, cpp_times = run_experiment(haskell_files, cpp_files)
 
+    haskell_optim_all = []
+    haskell_all = []
+    cpp_all = []
+    for group in cpp_times:
+        haskell_optim_all.extend(haskell_optim_times[group])
+        haskell_all.extend(haskell_times[group])
+        cpp_all.extend(cpp_times[group])
+        print(group)
+        print(haskell_optim_times[group])
+        print(haskell_times[group])
+        print(cpp_times[group])
 
-    # files = find_files()
-    # haskell_optim_times, haskell_times, cpp_times = run_experiment(*files)
-    # haskell_optim_all = []
-    # haskell_all = []
-    # cpp_all = []
-    # for group in cpp_times:
-    #     haskell_optim_all.extend(haskell_optim_times[group])
-    #     haskell_all.extend(haskell_times[group])
-    #     cpp_all.extend(cpp_times[group])
-    #     print(group)
-    #     print(haskell_optim_times[group])
-    #     print(haskell_times[group])
-    #     print(cpp_times[group])
-
-    #     h_o_a = np.cumsum(np.sort(
-    #         np.array(list(filter(lambda x: x < TIMEOUT, haskell_optim_times[group])))))
-    #     h_u_a = np.cumsum(
-    #         np.sort(np.array(list(filter(lambda x: x < TIMEOUT, haskell_times[group])))))
-    #     c_a = np.cumsum(
-    #         np.sort(np.array(list(filter(lambda x: x < TIMEOUT, cpp_times[group])))))
-    #     plt.figure()
-    #     plt.plot(h_o_a, np.arange(h_o_a.size), label="Haskell Optimised")
-    #     plt.plot(h_u_a, np.arange(h_u_a.size), label="Haskell Unoptimised")
-    #     plt.plot(c_a, np.arange(c_a.size), label="C++")
-    #     plt.xlabel("Time (seconds)")
-    #     plt.legend()
-    #     plt.title(group + " Benchmarks (K)")
-    #     plt.ylabel("Problems Solved")
-    #     plt.savefig("K" + group + ".png")
-    # print("Total")
-    # print(haskell_optim_all)
-    # print(haskell_all)
-    # print(cpp_all)
-    # plt.figure()
-    # plt.plot(np.cumsum(np.sort(np.array(haskell_optim_all))),
-    #          np.arange(len(haskell_optim_all)), label="Haskell Optimised")
-    # plt.plot(np.cumsum(np.sort(np.array(haskell_all))),
-    #          np.arange(len(haskell_all)), label="Haskell Unoptimised")
-    # plt.xlabel("Time (seconds)")
-    # plt.plot(np.cumsum(np.sort(np.array(cpp_all))),
-    #          np.arange(len(cpp_all)), label="C++")
-    # plt.legend()
-    # plt.title("MQBF Benchmarks")
-    # plt.ylabel("Problems Solved")
-    # plt.savefig("K" + "overall.png")
+        h_o_a = np.cumsum(np.sort(
+            np.array(list(filter(lambda x: x < TIMEOUT, haskell_optim_times[group])))))
+        h_u_a = np.cumsum(
+            np.sort(np.array(list(filter(lambda x: x < TIMEOUT, haskell_times[group])))))
+        c_a = np.cumsum(
+            np.sort(np.array(list(filter(lambda x: x < TIMEOUT, cpp_times[group])))))
+        plt.figure()
+        plt.plot(h_o_a, np.arange(h_o_a.size), label="Haskell Optimised")
+        plt.plot(h_u_a, np.arange(h_u_a.size), label="Haskell Unoptimised")
+        plt.plot(c_a, np.arange(c_a.size), label="C++")
+        plt.xlabel("Time (seconds)")
+        plt.legend()
+        plt.title(group + " Benchmarks (K)")
+        plt.ylabel("Problems Solved")
+        plt.savefig("K" + group + ".png")
+    print("Total")
+    print(haskell_optim_all)
+    print(haskell_all)
+    print(cpp_all)
+    plt.figure()
+    plt.plot(np.cumsum(np.sort(np.array(haskell_optim_all))),
+             np.arange(len(haskell_optim_all)), label="Haskell Optimised")
+    plt.plot(np.cumsum(np.sort(np.array(haskell_all))),
+             np.arange(len(haskell_all)), label="Haskell Unoptimised")
+    plt.xlabel("Time (seconds)")
+    plt.plot(np.cumsum(np.sort(np.array(cpp_all))),
+             np.arange(len(cpp_all)), label="C++")
+    plt.legend()
+    plt.title("MQBF Benchmarks")
+    plt.ylabel("Problems Solved")
+    plt.savefig("K" + "overall.png")
