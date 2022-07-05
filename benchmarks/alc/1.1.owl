@@ -1,0 +1,1345 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.ifomis.org/bfo/1.1"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.ifomis.org/bfo/1.1">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Pierre Grenon, Barry Smith and Louis Goldberg: &quot;Biodynamic Ontology: Applying BFO in the Biomedical Domain&quot;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Institute for Formal Ontology and Medical Information Science (IFOMIS)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Pierre Grenon and Barry Smith: &quot;SNAP and SPAN: Towards Geospatial Dynamics&quot;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/language"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">en</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Pierre Grenon</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/format"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">application/rdf+xml</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Barry Smith and Pierre Grenon: &quot;The Cornucopia of Formal Ontological Relations&quot;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Holger Stenzhorn</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Pierre Grenon: &quot;BFO in a Nutshell: A Bi-categorial Axiomatization of BFO and Comparison with DOLCE&quot;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Pierre Grenon: &quot;Nuts in BFO&#39;s Nutshell: Revisions to the Bi-categorial Axiomatization of BFO&quot;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.1.1</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Barry Smith: &quot;Basic Tools of Formal Ontology&quot;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Pierre Grenon: &quot;Spatio-temporality in Basic Formal Ontology: SNAP and SPAN, Upper-Level Ontology, and Framework for Formalization&quot;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Andrew Spear</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/identifier"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">http://www.ifomis.org/bfo/1.1</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">http://creativecommons.org/licenses/by/3.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Alan Ruttenberg</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Barry Smith: &quot;Against Fantology&quot;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Barry Smith: &quot;Beyond Concepts: Ontology as Reality Representation&quot;</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Basic Formal Ontology (BFO)</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/snap#Continuant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/snap#DependentContinuant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/snap#Disposition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/snap#FiatObjectPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/snap#Function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/snap#GenericallyDependentContinuant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/snap#IndependentContinuant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/snap#MaterialEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/snap#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/snap#ObjectAggregate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/snap#ObjectBoundary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/snap#OneDimensionalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/snap#Quality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/snap#RealizableEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/snap#Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/snap#Site"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/snap#SpatialRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/snap#SpecificallyDependentContinuant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/snap#ThreeDimensionalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/snap#TwoDimensionalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/snap#ZeroDimensionalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/span#ConnectedSpatiotemporalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/span#ConnectedTemporalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/span#FiatProcessPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/span#Occurrent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/span#Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/span#ProcessAggregate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/span#ProcessBoundary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/span#ProcessualContext"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/span#ProcessualEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/span#ScatteredSpatiotemporalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/span#ScatteredTemporalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/span#SpatiotemporalInstant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/span#SpatiotemporalInterval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/span#SpatiotemporalRegion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/span#TemporalInstant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/span#TemporalInterval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/span#TemporalRegion"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/format"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/identifier"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/language"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/publisher"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Entity"/>
+        <ObjectUnionOf>
+            <Class IRI="/snap#Continuant"/>
+            <Class IRI="/span#Occurrent"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/snap#Continuant"/>
+        <ObjectUnionOf>
+            <Class IRI="/snap#DependentContinuant"/>
+            <Class IRI="/snap#IndependentContinuant"/>
+            <Class IRI="/snap#SpatialRegion"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/snap#DependentContinuant"/>
+        <ObjectUnionOf>
+            <Class IRI="/snap#GenericallyDependentContinuant"/>
+            <Class IRI="/snap#SpecificallyDependentContinuant"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/snap#IndependentContinuant"/>
+        <ObjectUnionOf>
+            <Class IRI="/snap#MaterialEntity"/>
+            <Class IRI="/snap#ObjectBoundary"/>
+            <Class IRI="/snap#Site"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/snap#MaterialEntity"/>
+        <ObjectUnionOf>
+            <Class IRI="/snap#FiatObjectPart"/>
+            <Class IRI="/snap#Object"/>
+            <Class IRI="/snap#ObjectAggregate"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/snap#SpatialRegion"/>
+        <ObjectUnionOf>
+            <Class IRI="/snap#OneDimensionalRegion"/>
+            <Class IRI="/snap#ThreeDimensionalRegion"/>
+            <Class IRI="/snap#TwoDimensionalRegion"/>
+            <Class IRI="/snap#ZeroDimensionalRegion"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/snap#SpecificallyDependentContinuant"/>
+        <ObjectUnionOf>
+            <Class IRI="/snap#Quality"/>
+            <Class IRI="/snap#RealizableEntity"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/span#ConnectedSpatiotemporalRegion"/>
+        <ObjectUnionOf>
+            <Class IRI="/span#SpatiotemporalInstant"/>
+            <Class IRI="/span#SpatiotemporalInterval"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/span#ConnectedTemporalRegion"/>
+        <ObjectUnionOf>
+            <Class IRI="/span#TemporalInstant"/>
+            <Class IRI="/span#TemporalInterval"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/span#Occurrent"/>
+        <ObjectUnionOf>
+            <Class IRI="/span#ProcessualEntity"/>
+            <Class IRI="/span#SpatiotemporalRegion"/>
+            <Class IRI="/span#TemporalRegion"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/span#ProcessualEntity"/>
+        <ObjectUnionOf>
+            <Class IRI="/span#FiatProcessPart"/>
+            <Class IRI="/span#Process"/>
+            <Class IRI="/span#ProcessAggregate"/>
+            <Class IRI="/span#ProcessBoundary"/>
+            <Class IRI="/span#ProcessualContext"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/span#SpatiotemporalRegion"/>
+        <ObjectUnionOf>
+            <Class IRI="/span#ConnectedSpatiotemporalRegion"/>
+            <Class IRI="/span#ScatteredSpatiotemporalRegion"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/span#TemporalRegion"/>
+        <ObjectUnionOf>
+            <Class IRI="/span#ConnectedTemporalRegion"/>
+            <Class IRI="/span#ScatteredTemporalRegion"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="/snap#Continuant"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/snap#DependentContinuant"/>
+        <Class IRI="/snap#Continuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/snap#Disposition"/>
+        <Class IRI="/snap#RealizableEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/snap#FiatObjectPart"/>
+        <Class IRI="/snap#MaterialEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/snap#Function"/>
+        <Class IRI="/snap#RealizableEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/snap#GenericallyDependentContinuant"/>
+        <Class IRI="/snap#DependentContinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/snap#IndependentContinuant"/>
+        <Class IRI="/snap#Continuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/snap#MaterialEntity"/>
+        <Class IRI="/snap#IndependentContinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/snap#Object"/>
+        <Class IRI="/snap#MaterialEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/snap#ObjectAggregate"/>
+        <Class IRI="/snap#MaterialEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/snap#ObjectBoundary"/>
+        <Class IRI="/snap#IndependentContinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/snap#OneDimensionalRegion"/>
+        <Class IRI="/snap#SpatialRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/snap#Quality"/>
+        <Class IRI="/snap#SpecificallyDependentContinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/snap#RealizableEntity"/>
+        <Class IRI="/snap#SpecificallyDependentContinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/snap#Role"/>
+        <Class IRI="/snap#RealizableEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/snap#Site"/>
+        <Class IRI="/snap#IndependentContinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/snap#SpatialRegion"/>
+        <Class IRI="/snap#Continuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/snap#SpecificallyDependentContinuant"/>
+        <Class IRI="/snap#DependentContinuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/snap#ThreeDimensionalRegion"/>
+        <Class IRI="/snap#SpatialRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/snap#TwoDimensionalRegion"/>
+        <Class IRI="/snap#SpatialRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/snap#ZeroDimensionalRegion"/>
+        <Class IRI="/snap#SpatialRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/span#ConnectedSpatiotemporalRegion"/>
+        <Class IRI="/span#SpatiotemporalRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/span#ConnectedTemporalRegion"/>
+        <Class IRI="/span#TemporalRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/span#FiatProcessPart"/>
+        <Class IRI="/span#ProcessualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/span#Occurrent"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/span#Process"/>
+        <Class IRI="/span#ProcessualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/span#ProcessAggregate"/>
+        <Class IRI="/span#ProcessualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/span#ProcessBoundary"/>
+        <Class IRI="/span#ProcessualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/span#ProcessualContext"/>
+        <Class IRI="/span#ProcessualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/span#ProcessualEntity"/>
+        <Class IRI="/span#Occurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/span#ScatteredSpatiotemporalRegion"/>
+        <Class IRI="/span#SpatiotemporalRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/span#ScatteredTemporalRegion"/>
+        <Class IRI="/span#TemporalRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/span#SpatiotemporalInstant"/>
+        <Class IRI="/span#ConnectedSpatiotemporalRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/span#SpatiotemporalInterval"/>
+        <Class IRI="/span#ConnectedSpatiotemporalRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/span#SpatiotemporalRegion"/>
+        <Class IRI="/span#Occurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/span#TemporalInstant"/>
+        <Class IRI="/span#ConnectedTemporalRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/span#TemporalInterval"/>
+        <Class IRI="/span#ConnectedTemporalRegion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/span#TemporalRegion"/>
+        <Class IRI="/span#Occurrent"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="/snap#Continuant"/>
+        <Class IRI="/span#Occurrent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#DependentContinuant"/>
+        <Class IRI="/snap#IndependentContinuant"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#DependentContinuant"/>
+        <Class IRI="/snap#SpatialRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#Disposition"/>
+        <Class IRI="/snap#Function"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#Disposition"/>
+        <Class IRI="/snap#Role"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#FiatObjectPart"/>
+        <Class IRI="/snap#Object"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#FiatObjectPart"/>
+        <Class IRI="/snap#ObjectAggregate"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#FiatObjectPart"/>
+        <Class IRI="/snap#ObjectBoundary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#FiatObjectPart"/>
+        <Class IRI="/snap#Site"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#Function"/>
+        <Class IRI="/snap#Role"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#GenericallyDependentContinuant"/>
+        <Class IRI="/snap#SpecificallyDependentContinuant"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#IndependentContinuant"/>
+        <Class IRI="/snap#SpatialRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#MaterialEntity"/>
+        <Class IRI="/snap#ObjectBoundary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#MaterialEntity"/>
+        <Class IRI="/snap#Site"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#Object"/>
+        <Class IRI="/snap#ObjectAggregate"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#Object"/>
+        <Class IRI="/snap#ObjectBoundary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#Object"/>
+        <Class IRI="/snap#Site"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#ObjectAggregate"/>
+        <Class IRI="/snap#ObjectBoundary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#ObjectAggregate"/>
+        <Class IRI="/snap#Site"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#ObjectBoundary"/>
+        <Class IRI="/snap#Site"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#OneDimensionalRegion"/>
+        <Class IRI="/snap#ThreeDimensionalRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#OneDimensionalRegion"/>
+        <Class IRI="/snap#TwoDimensionalRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#OneDimensionalRegion"/>
+        <Class IRI="/snap#ZeroDimensionalRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#Quality"/>
+        <Class IRI="/snap#RealizableEntity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#ThreeDimensionalRegion"/>
+        <Class IRI="/snap#TwoDimensionalRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#ThreeDimensionalRegion"/>
+        <Class IRI="/snap#ZeroDimensionalRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/snap#TwoDimensionalRegion"/>
+        <Class IRI="/snap#ZeroDimensionalRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/span#ConnectedSpatiotemporalRegion"/>
+        <Class IRI="/span#ScatteredSpatiotemporalRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/span#ConnectedTemporalRegion"/>
+        <Class IRI="/span#ScatteredTemporalRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/span#FiatProcessPart"/>
+        <Class IRI="/span#Process"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/span#FiatProcessPart"/>
+        <Class IRI="/span#ProcessAggregate"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/span#FiatProcessPart"/>
+        <Class IRI="/span#ProcessBoundary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/span#FiatProcessPart"/>
+        <Class IRI="/span#ProcessualContext"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/span#Process"/>
+        <Class IRI="/span#ProcessAggregate"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/span#Process"/>
+        <Class IRI="/span#ProcessBoundary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/span#Process"/>
+        <Class IRI="/span#ProcessualContext"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/span#ProcessAggregate"/>
+        <Class IRI="/span#ProcessBoundary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/span#ProcessAggregate"/>
+        <Class IRI="/span#ProcessualContext"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/span#ProcessBoundary"/>
+        <Class IRI="/span#ProcessualContext"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/span#ProcessualEntity"/>
+        <Class IRI="/span#SpatiotemporalRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/span#ProcessualEntity"/>
+        <Class IRI="/span#TemporalRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/span#SpatiotemporalInstant"/>
+        <Class IRI="/span#SpatiotemporalInterval"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/span#SpatiotemporalRegion"/>
+        <Class IRI="/span#TemporalRegion"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/span#TemporalInstant"/>
+        <Class IRI="/span#TemporalInterval"/>
+    </DisjointClasses>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Entity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#Continuant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: An entity [bfo:Entity] that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#Continuant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: a heart, a person, the color of a tomato, the mass of a cloud, a symphony orchestra, the disposition of blood to coagulate, the lawn and atmosphere in front of our building</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#Continuant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Synonyms: endurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/snap#Continuant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">continuant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#DependentContinuant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A continuant [snap:Continuant] that is either dependent on one or other independent continuant [snap:IndependentContinuant] bearers or inheres in or is borne by other entities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/snap#DependentContinuant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">dependent_continuant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#Disposition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A realizable entity [snap:RealizableEntity] that essentially causes a specific process or transformation in the object [snap:Object] in which it inheres, under specific circumstances and in conjunction with the laws of nature. A general formula for dispositions is: X (object [snap:Object] has the disposition D to (transform, initiate a process) R under conditions C.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#Disposition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: the disposition of vegetables to decay when not refrigerated, the disposition of a vase to brake if dropped, the disposition of blood to coagulate, the disposition of a patient with a weakened immune system to contract disease, the disposition of metal to conduct electricity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/snap#Disposition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">disposition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#FiatObjectPart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A material entity [snap:MaterialEntity] that is part of an object [snap:Object] but is not demarcated by any physical discontinuities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#FiatObjectPart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: upper and lower lobes of the left lung, the dorsal and ventral surfaces of the body, the east side of Saarbruecken, the lower right portion of a human torso</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#FiatObjectPart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Synonyms: fiat substance part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/snap#FiatObjectPart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">fiat_object_part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#Function</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A realizable entity [snap:RealizableEntity] the manifestation of which is an essentially end-directed activity of a continuant [snap:Continuant] entity in virtue of that continuant [snap:Continuant] entity being a specific kind of entity in the kind or kinds of contexts that it is made for.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#Function</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: the function of a birth canal to enable transport, the function of the heart in the body: to pump blood, to receive de-oxygenated and oxygenated blood, etc., the function of reproduction in the transmission of genetic material, the digestive function of the stomach to nutriate the body, the function of a hammer to drive in nails, the function of a computer program to compute mathematical equations, the function of an automobile to provide transportation, the function of a judge in a court of law</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/snap#Function</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#GenericallyDependentContinuant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A continuant [snap:Continuant] that is dependent on one or other independent continuant [snap:IndependentContinuant] bearers. For every instance of A requires some instance of (an independent continuant [snap:IndependentContinuant] type) B but which instance of B serves can change from time to time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#GenericallyDependentContinuant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: a certain PDF file that exists in different and in several hard drives</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/snap#GenericallyDependentContinuant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">generically_dependent_continuant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#IndependentContinuant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A continuant [snap:Continuant] that is a bearer of quality [snap:Quality] and realizable entity [snap:RealizableEntity] entities, in which other entities inhere and which itself cannot inhere in anything.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#IndependentContinuant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: an organism, a heart, a leg, a person, a symphony orchestra, a chair, the bottom right portion of a human torso, the lawn and atmosphere in front of our building</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#IndependentContinuant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Synonyms: substantial entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/snap#IndependentContinuant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">independent_continuant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#MaterialEntity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: An independent continuant [snap:IndependentContinuant] that is spatially extended whose identity is independent of that of other entities and can be maintained through time. Note: Material entity [snap:MaterialEntity] subsumes object [snap:Object], fiat object part [snap:FiatObjectPart], and object aggregate [snap:ObjectAggregate], which assume a three level theory of granularity, which is inadequate for some domains, such as biology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#MaterialEntity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: collection of random bacteria, a chair, dorsal surface of the body</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/snap#MaterialEntity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">material_entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#Object</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A material entity [snap:MaterialEntity] that is spatially extended, maximally self-connected and self-contained (the parts of a substance are not separated from each other by spatial gaps) and possesses an internal unity. The identity of substantial object [snap:Object] entities is independent of that of other entities and can be maintained through time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#Object</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: an organism, a heart, a chair, a lung, an apple</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#Object</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Synonyms: substance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/snap#Object</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#ObjectAggregate</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A material entity [snap:MaterialEntity] that is a mereological sum of separate object [snap:Object] entities and possesses non-connected boundaries.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#ObjectAggregate</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: a heap of stones, a group of commuters on the subway, a collection of random bacteria, a flock of geese, the patients in a hospital</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#ObjectAggregate</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Synonyms: substance aggregate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/snap#ObjectAggregate</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">object_aggregate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#ObjectBoundary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Comment: Boundaries are theoretically difficult entities to account for, however the intuitive notion of a physical boundary as a surface of some sort (whether inside or outside of a thing) will generally serve as a good guide for the use of this universal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#ObjectBoundary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: An independent continuant [snap:IndependentContinuant] that is a lower dimensional part of a spatial entity, normally a closed two-dimensional surface. Boundaries are those privileged parts of object [snap:Object] entities that exist at exactly the point where the object [snap:Object] is separated off from the rest of the existing entities in the world.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#ObjectBoundary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: the surface of the skin, the surface of the earth, the surface of the interior of the stomach, the outer surface of a cell or cell wall</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#ObjectBoundary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Synonyms: substance boundary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/snap#ObjectBoundary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">object_boundary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#OneDimensionalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A spatial region [snap:SpatialRegion] with one dimension.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#OneDimensionalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: the part of space that is a line stretching from one end of absolute space to the other, an edge of a cube-shaped part of space</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/snap#OneDimensionalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">one_dimensional_region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#Quality</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A specifically dependent continuant [snap:SpecificallyDependentContinuant] that is exhibited if it inheres in an entity or entities at all (a categorical property).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#Quality</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: the color of a tomato, the ambient temperature of air, the circumference of a waist, the shape of a nose, the mass of a piece of gold, the weight of a chimpanzee</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/snap#Quality</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">quality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#RealizableEntity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Comment: If a realizable entity [snap:RealizableEntity] inheres in a continuant [snap:Continuant], this does not imply that it is actually realized.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#RealizableEntity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A specifically dependent continuant [snap:SpecificallyDependentContinuant] that inheres in continuant [snap:Continuant] entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#RealizableEntity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: the role of being a doctor, the function of the reproductive organs, the disposition of blood to coagulate, the disposition of metal to conduct electricity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/snap#RealizableEntity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">realizable_entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#Role</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A realizable entity [snap:RealizableEntity] the manifestation of which brings about some result or end that is not essential to a continuant [snap:Continuant] in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant [snap:Continuant] in some kinds of natural, social or institutional contexts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#Role</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: the role of a person as a surgeon, the role of a chemical compound in an experiment, the role of a patient relative as defined by a hospital administrative form, the role of a woman as a legal mother in the context of system of laws, the role of a biological grandfather as legal guardian in the context of a system of laws, the role of ingested matter in digestion, the role of a student in a university</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/snap#Role</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#Site</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Comment: An instance of Site [snap:Site] is a mixture of independent continuant [snap:IndependentContinuant] entities which act as surrounding environments for other independent continuant [snap:IndependentContinuant] entities, most importantly for instances of object [snap:Object]. A site [snap:Site] is typically made of object [snap:Object] or fiat object part [snap:FiatObjectPart] entities and a surrounding medium in which is found an object [snap:Object] occupying the site [snap:Site]. Independent continuant [snap:IndependentContinuant] entities may be associated with others (which, then, are site [snap:Site] entities) through a relation of &quot;occupation&quot;. That relation is connected to, but distinct from, the relation of spatial location. Site [snap:Site] entities are not to be confused with spatial region [snap:SpatialRegion] entities. In BFO, site [snap:Site] allows for a so-called relational view of space which is different from the view corresponding to the class spatial region [snap:SpatialRegion] (see the comment on this class).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#Site</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: An independent continuant [snap:IndependentContinuant] consisting of a characteristic spatial shape in relation to some arrangement of other continuant [snap:Continuant] entities and of the medium which is enclosed in whole or in part by this characteristic spatial shape. Site [snap:Site] entities are entities that can be occupied by other continuant [snap:Continuant] entities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#Site</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: a particular room in a particular hospital, Maria&#39;s nostril or her intestines for a variety of bacteria.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/snap#Site</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">site</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#SpatialRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Comment: All instances of continuant [snap:Continuant] are spatial entities, that is, they enter in the relation of (spatial) location with spatial region [snap:SpatialRegion] entities. As a particular case, the exact spatial location of a spatial region [snap:SpatialRegion] is this region itself.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#SpatialRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Comment: An instance of spatial region [snap:SpatialRegion] is a part of space. All parts of space are spatial region [snap:SpatialRegion] entities and only spatial region [snap:SpatialRegion] entities are parts of space. Space is the entire extent of the spatial universe, a designated individual, which is thus itself a spatial region [snap:SpatialRegion].</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#SpatialRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Comment: Space and spatial region [snap:SpatialRegion] entities are entities in their own rights which exist independently of any entities which can be located at them. This view of space is sometimes called &quot;absolutist&quot; or &quot;the container view&quot;. In BFO, the class site [snap:Site] allows for a so-called relational view of space, that is to say, a view according to which spatiality is a matter of relative location between entities and not a matter of being tied to space. The bridge between these two views is secured through the fact that while instances of site [snap:Site] are not spatial region [snap:SpatialRegion] entities, they are nevertheless spatial entities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#SpatialRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A continuant [snap:Continuant] that is neither bearer of quality [snap:Quality] entities nor inheres in any other entities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#SpatialRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: the sum total of all space in the universe, parts of the sum total of all space in the universe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/snap#SpatialRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">spatial_region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#SpecificallyDependentContinuant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A continuant [snap:Continuant] that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#SpecificallyDependentContinuant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: the mass of a cloud, the smell of mozzarella, the liquidity of blood, the color of a tomato, the disposition of fish to decay, the role of being a doctor, the function of the heart in the body: to pump blood, to receive de-oxygenated and oxygenated blood, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#SpecificallyDependentContinuant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Synonyms: property, trope, mode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/snap#SpecificallyDependentContinuant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">specifically_dependent_continuant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#ThreeDimensionalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A spatial region [snap:SpatialRegion] with three dimensions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#ThreeDimensionalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: a cube-shaped part of space, a sphere-shaped part of space</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/snap#ThreeDimensionalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">three_dimensional_region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#TwoDimensionalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A spatial region [snap:SpatialRegion] with two dimensions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#TwoDimensionalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: the surface of a cube-shaped part of space, the surface of a sphere-shaped part of space, the surface of a rectilinear planar figure-shaped part of space</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/snap#TwoDimensionalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">two_dimensional_region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#ZeroDimensionalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A spatial region [snap:SpatialRegion] with no dimensions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/snap#ZeroDimensionalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: a point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/snap#ZeroDimensionalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">zero_dimensional_region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#ConnectedSpatiotemporalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A spatiotemporal region [span:SpatiotemporalRegion] that has temporal and spatial dimensions such that all points within the spatiotemporal region are mediately or immediately connected to all other points within the same spatiotemporal region [span:SpatiotemporalRegion].</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#ConnectedSpatiotemporalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: the spatial and temporal location of an individual organism&#39;s life, the spatial and temporal location of the development of a fetus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/span#ConnectedSpatiotemporalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">connected_spatiotemporal_region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#ConnectedTemporalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A temporal region [span:TemporalRegion] every point of which is mediately or immediately connected with every other point of which.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#ConnectedTemporalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: the 1970s years, the time from the beginning to the end of a heart attack, the time taken up by cellular meiosis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/span#ConnectedTemporalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">connected_temporal_region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#FiatProcessPart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A processual entity [span:ProcessualEntity] that is part of a process but that does not have bona fide beginnings and endings corresponding to real discontinuities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#FiatProcessPart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: chewing during a meal, the middle part of a rainstorm, the worst part of a heart-attack, the most interesting part of Van Gogh&#39;s life</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/span#FiatProcessPart</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">fiat_process_part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#Occurrent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: An entity [bfo:Entity] that has temporal parts and that happens, unfolds or develops through time. Sometimes also called perdurants.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#Occurrent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: the life of an organism, a surgical operation as processual context for a nosocomical infection, the spatiotemporal context occupied by a process of cellular meiosis, the most interesting part of Van Gogh&#39;s life, the spatiotemporal region occupied by the development of a cancer tumor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#Occurrent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Synonyms: perdurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/span#Occurrent</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">occurrent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#Process</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A processual entity [span:ProcessualEntity] that is a maximally connected spatiotemporal whole and has bona fide beginnings and endings corresponding to real discontinuities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#Process</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: the life of an organism, the process of sleeping, the process of cell-division</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/span#Process</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#ProcessAggregate</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A processual entity [span:ProcessualEntity] that is a mereological sum of process [span:Process] entities and possesses non-connected boundaries.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#ProcessAggregate</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: the beating of the hearts of each of seven individuals in the room, the playing of each of the members of an orchestra, a process of digestion and a process of thinking taken together</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/span#ProcessAggregate</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">process_aggregate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#ProcessBoundary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A processual entity [span:ProcessualEntity] that is the fiat or bona fide instantaneous temporal process boundary.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#ProcessBoundary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: birth, death, the forming of a synapse, the onset of REM sleep, the detaching of a finger in an industrial accident, the final separation of two cells at the end of cell-division, the incision at the beginning of a surgery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/span#ProcessBoundary</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">process_boundary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#ProcessualContext</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Comment: An instance of a processual context [span:ProcessualContext] is a mixture of processual entity [span:ProcessualEntity] which stand as surrounding environments for other processual entity [span:ProcessualEntity] entities. The class processual context [span:ProcessualContext] is the analogous among occurrent [span:Occurrent] entities to the class site [snap:Site] among continuant [snap:Continuant] entities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#ProcessualContext</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: An occurrent [span:Occurrent] consisting of a characteristic spatial shape inhering in some arrangement of other occurrent [span:Occurrent] entities. Processual context [span:ProcessualContext] entities are characteristically entities at or in which other occurrent [span:Occurrent] entities can be located or occur.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#ProcessualContext</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: The processual context for a given manipulation occurring as part of an experiment is made of processual entities which occur in parallel, are not necessarily all parts of the experiment themselves and may involve continuant [snap:Continuant] entities which are in the spatial vicinity of the participants in the experiment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/span#ProcessualContext</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">processual_context</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#ProcessualEntity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: An occurrent [span:Occurrent] that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#ProcessualEntity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: the life of an organism, the process of meiosis, the course of a disease, the flight of a bird</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/span#ProcessualEntity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">processual_entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#ScatteredSpatiotemporalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A spatiotemporal region [span:SpatiotemporalRegion] that has spatial and temporal dimensions and every spatial and temporal point of which is not connected with every other spatial and temporal point of which.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#ScatteredSpatiotemporalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: the space and time occupied by the individual games of the World Cup, the space and time occupied by the individual liaisons in a romantic affair</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/span#ScatteredSpatiotemporalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">scattered_spatiotemporal_region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#ScatteredTemporalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A temporal region [span:TemporalRegion] every point of which is not mediately or immediately connected with every other point of which.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#ScatteredTemporalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: the time occupied by the individual games of the World Cup, the time occupied by the individual liaisons in a romantic affair</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/span#ScatteredTemporalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">scattered_temporal_region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#SpatiotemporalInstant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A connected spatiotemporal region [span:ConnectedSpatiotemporalRegion] at a specific moment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#SpatiotemporalInstant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: the spatiotemporal region occupied by a single instantaneous temporal slice (part) of a process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/span#SpatiotemporalInstant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">spatiotemporal_instant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#SpatiotemporalInterval</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A connected spatiotemporal region [span:ConnectedSpatiotemporalRegion] that endures for more than a single moment of time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#SpatiotemporalInterval</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: the spatiotemporal region occupied by a process or by a fiat processual part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/span#SpatiotemporalInterval</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">spatiotemporal_interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#SpatiotemporalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Comment: All instances of occurrent [span:Occurrent] are spatiotemporal entities, that is, they enter in the relation of (spatiotemporal) location with spatiotemporal region [span:SpatiotemporalRegion] entities. As a particular case, the exact spatiotemporal location of a spatiotemporal region [span:SpatiotemporalRegion] is this region itself.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#SpatiotemporalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Comment: An instance of the spatiotemporal region [span:SpatiotemporalRegion] is a part of spacetime. All parts of spacetime are spatiotemporal region [span:SpatiotemporalRegion] entities and only spatiotemporal region [span:SpatiotemporalRegion] entities are parts of spacetime. In particular, neither spatial region [snap:SpatialRegion] entities nor temporal region [span:TemporalRegion] entities are in BFO parts of spacetime. Spacetime is the entire extent of the spatiotemporal universe, a designated individual, which is thus itself a spatiotemporal region [span:SpatiotemporalRegion]. Spacetime is among occurrents the analogous of space among continuant [snap:Continuant] entities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#SpatiotemporalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Comment: Spacetime and spatiotemporal region [span:SpatiotemporalRegion] entities are entities in their own rights which exist independently of any entities which can be located at them. This view of spacetime can be called &quot;absolutist&quot; or &quot;the container view&quot;. In BFO, the class processual context [span:ProcessualContext] allows for a so-called relational view of spacetime, that is to say, a view according to which spatiotemporality is a matter of relative location between entities and not a matter of being tied to spacetime. In BFO, the bridge between these two views is secured through the fact that instances of processual context [span:ProcessualContext] are too spatiotemporal entities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#SpatiotemporalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: An occurrent [span:Occurrent] at or in which processual entity [span:ProcessualEntity] entities can be located.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#SpatiotemporalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: the spatiotemporal region occupied by a human life, the spatiotemporal region occupied by the development of a cancer tumor, the spatiotemporal context occupied by a process of cellular meiosis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/span#SpatiotemporalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">spatiotemporal_region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#TemporalInstant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A connected temporal region [span:ConnectedTemporalRegion] comprising a single moment of time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#TemporalInstant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: right now, the moment at which a finger is detached in an industrial accident, the moment at which a child is born, the moment of death</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/span#TemporalInstant</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temporal_instant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#TemporalInterval</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: A connected temporal region [span:ConnectedTemporalRegion] lasting for more than a single moment of time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#TemporalInterval</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: any continuous temporal duration during which a process occurs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/span#TemporalInterval</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temporal_interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#TemporalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Comment: All instances of occurrent [span:Occurrent] are temporal entities, that is, they enter in the relation of (temporal) location with temporal region [span:TemporalRegion] entities. As a particular case, the exact spatiotemporal location of a temporal region [span:TemporalRegion] is this region itself. Continuant [snap:Continuant] entities are not temporal entities in the technical sense just explained; they are related to time in a different way, not through temporal location but through a relation of existence at a time or during a period of time (see continuant [snap:Continuant].</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#TemporalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Comment: An instance of temporal region [span:TemporalRegion] is a part of time. All parts of time are temporal region [span:TemporalRegion] entities and only temporal region [span:TemporalRegion] entities are parts of time. Time is the entire extent of the temporal universe, a designated individual, which is thus a temporal region itself.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#TemporalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Comment: Time and temporal region [span:TemporalRegion] entities are entities in their own rights which exist independently of any entities which can be located at them. This view of time can be called &quot;absolutist&quot; or &quot;the container view&quot; in analogy to what is traditionally the case with space (see spatial region [snap:SpatialRegion].</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#TemporalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Definition: An occurrent [span:Occurrent] that is part of time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/span#TemporalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Examples: the time it takes to run a marathon, the duration of a surgical procedure, the moment of death</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/span#TemporalRegion</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">temporal_region</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.4.1806) http://owlapi.sourceforge.net -->
+
