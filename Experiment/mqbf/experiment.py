@@ -152,12 +152,12 @@ if __name__ == "__main__":
     haskell_files, cpp_files = find_files()
 
     # test them seperately 
-    keys = list(haskell_files.keys())
-    print(keys)
-    for k in keys:
-        if k != "3CNF":
-            haskell_files.pop(k)
-            cpp_files.pop(k)
+#    keys = list(haskell_files.keys())
+#    print(keys)
+#    for k in keys:
+#        if k != "3CNF":
+#            haskell_files.pop(k)
+#            cpp_files.pop(k)
 
     haskell_optim_times, haskell_times, cpp_times = run_experiment(haskell_files, cpp_files)
 
