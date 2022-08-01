@@ -1,0 +1,5 @@
+,CPP_time,haskell_time,haskell_optim_time,CPP_result,haskell_result,haskell_optim_result,file_path
+0,0.07673001289367676,0.10875248908996582,0.10409140586853027,Satisfiable,Satisfiable,Satisfiable,/home/junwei/CEGARBoxCPP/benchmarks/qbf/C10-V04-D4p-qbf-cnf-K4-C10-V04-D4.1.hf  /home/junwei/CEGARBoxCPP/benchmarks/qbf/C10-V04-D4p-qbf-cnf-K4-C10-V04-D4.1.cf
+1,0.0851294994354248,0.10452747344970703,0.10243868827819824,Satisfiable,Satisfiable,Satisfiable,/home/junwei/CEGARBoxCPP/benchmarks/qbf/C10-V04-D4p-qbf-cnf-K4-C10-V04-D4.2.hf  /home/junwei/CEGARBoxCPP/benchmarks/qbf/C10-V04-D4p-qbf-cnf-K4-C10-V04-D4.2.cf
+2,0.07180929183959961,0.11289453506469727,0.1059112548828125,Satisfiable,Satisfiable,Satisfiable,/home/junwei/CEGARBoxCPP/benchmarks/qbf/C10-V04-D4p-qbf-cnf-K4-C10-V04-D4.3.hf  /home/junwei/CEGARBoxCPP/benchmarks/qbf/C10-V04-D4p-qbf-cnf-K4-C10-V04-D4.3.cf
+3,0.06623506546020508,0.10389542579650879,0.10197043418884277,Satisfiable,Satisfiable,Satisfiable,/home/junwei/CEGARBoxCPP/benchmarks/qbf/C10-V04-D4p-qbf-cnf-K4-C10-V04-D4.4.hf  /home/junwei/CEGARBoxCPP/benchmarks/qbf/C10-V04-D4p-qbf-cnf-K4-C10-V04-D4.4.cf

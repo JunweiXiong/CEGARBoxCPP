@@ -41,6 +41,7 @@ shared_ptr<Trieform> TrieformProverK::create(const vector<int> &newModality) {
 
 shared_ptr<Bitset>
 TrieformProverK::convertAssumptionsToBitset(literal_set literals) {
+
   shared_ptr<Bitset> bitset =
       shared_ptr<Bitset>(new Bitset(2 * assumptionsSize));
   for (Literal literal : literals) {
@@ -71,35 +72,37 @@ void TrieformProverK::prepareSAT(name_set extra) {
 }
 
 Solution TrieformProverK::prove(literal_set assumptions) {
+  
   // Check solution memo
+  // cout << "here1" << endl;
   shared_ptr<Bitset> assumptionsBitset =
       convertAssumptionsToBitset(assumptions);
   LocalSolutionMemoResult memoResult = localMemo.getFromMemo(assumptionsBitset);
-
+  // cout << "here2" << endl;
   if (memoResult.inSatMemo) {
     return memoResult.result;
   }
-
+  // cout << "here3" << endl;
   // Solve locally
   Solution solution = prover->solve(assumptions);
-
+  // cout << "here4" << endl;
   if (!solution.satisfiable) {
     updateSolutionMemo(assumptionsBitset, solution);
     return solution;
   }
-
+  // cout << "here5" << endl;
   prover->calculateTriggeredDiamondsClauses();
   modal_literal_map triggeredDiamonds = prover->getTriggeredDiamondClauses();
-
+  // cout << "here6" << endl;
   // If there are no fired diamonds, it is satisfiable
   if (triggeredDiamonds.size() == 0) {
     updateSolutionMemo(assumptionsBitset, solution);
     return solution;
   }
-
+  // cout << "here7" << endl;
   prover->calculateTriggeredBoxClauses();
   modal_literal_map triggeredBoxes = prover->getTriggeredBoxClauses();
-
+  // cout << "here8" << endl;
   for (auto modalitySubtrie : subtrieMap) {
     // Handle each modality
     if (triggeredDiamonds[modalitySubtrie.first].size() == 0) {
@@ -185,8 +188,10 @@ Solution TrieformProverK::prove(literal_set assumptions) {
           return prove(assumptions);
         }
       }
+      // cout << "here9" << endl;
     }
   }
+  // cout << "here10" << endl;
   // If we reached here the solution is satisfiable under all modalities
   updateSolutionMemo(assumptionsBitset, solution);
   return solution;

@@ -1,0 +1,3 @@
+,CPP_time,haskell_time,haskell_optim_time,CPP_result,haskell_result,haskell_optim_result,file_path
+0,40.05439043045044,3.889570474624634,3.249314785003662,timeout,Satisfiable,Satisfiable,"/home/junwei/CEGARBoxCPP/benchmarks/3CNF/3CNFv03m1d2C[[0,0,1]]p[[[],[],[1,0,0,0]]]nm0.5np0.5c135s2.hf  /home/junwei/CEGARBoxCPP/benchmarks/3CNF/3CNFv03m1d2C[[0,0,1]]p[[[],[],[1,0,0,0]]]nm0.5np0.5c135s2.cf"
+1,40.051069498062134,3.019730806350708,1.7784168720245361,timeout,Satisfiable,Satisfiable,"/home/junwei/CEGARBoxCPP/benchmarks/3CNF/3CNFv03m1d2C[[0,0,1]]p[[[],[],[1,0,0,0]]]nm0.5np0.5c135s3.hf  /home/junwei/CEGARBoxCPP/benchmarks/3CNF/3CNFv03m1d2C[[0,0,1]]p[[[],[],[1,0,0,0]]]nm0.5np0.5c135s3.cf"
