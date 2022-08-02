@@ -164,46 +164,35 @@ if __name__ == "__main__":
         df.to_csv("Experiment/data/"+group+'.csv')
 
 
-    haskell_optim_all = []
-    haskell_all = []
-    cpp_all = []
-    for group in cpp_times:
-        haskell_optim_all.extend(haskell_optim_times[group])
-        haskell_all.extend(haskell_times[group])
-        cpp_all.extend(cpp_times[group])
+    # overall 
+    cpp_times_all = []
+    haskell_times_all = []
+    haskell_optim_times_all = []
+    cpp_results_all = []
+    haskell_results_all = []
+    haskell_optim_results_all = []
+    file_path_all = []
+    
+    for group in file_path:
+        cpp_times_all.extend(cpp_times[group])
+        haskell_times_all.extend(haskell_times[group])
+        haskell_optim_times_all.extend(haskell_optim_times[group])
+        cpp_results_all.extend(cpp_results[group])
+        haskell_results_all.extend(haskell_results[group])
+        haskell_optim_results_all.extend(haskell_optim_results[group])
+        file_path_all.extend(file_path[group])
         print(group)
         print(haskell_optim_times[group])
         print(haskell_times[group])
         print(cpp_times[group])
 
-        h_o_a = np.cumsum(np.sort(
-            np.array(list(filter(lambda x: x < TIMEOUT, haskell_optim_times[group])))))
-        h_u_a = np.cumsum(
-            np.sort(np.array(list(filter(lambda x: x < TIMEOUT, haskell_times[group])))))
-        c_a = np.cumsum(
-            np.sort(np.array(list(filter(lambda x: x < TIMEOUT, cpp_times[group])))))
-        plt.figure()
-        plt.plot(h_o_a, np.arange(h_o_a.size), label="Haskell Optimised")
-        plt.plot(h_u_a, np.arange(h_u_a.size), label="Haskell Unoptimised")
-        plt.plot(c_a, np.arange(c_a.size), label="C++")
-        plt.xlabel("Time (seconds)")
-        plt.legend()
-        plt.title(group + " Benchmarks (K)")
-        plt.ylabel("Problems Solved")
-        plt.savefig("Experiment/data/"+"K" + group + ".png")
-    print("Total")
-    print(haskell_optim_all)
-    print(haskell_all)
-    print(cpp_all)
-    plt.figure()
-    plt.plot(np.cumsum(np.sort(np.array(haskell_optim_all))),
-             np.arange(len(haskell_optim_all)), label="Haskell Optimised")
-    plt.plot(np.cumsum(np.sort(np.array(haskell_all))),
-             np.arange(len(haskell_all)), label="Haskell Unoptimised")
-    plt.xlabel("Time (seconds)")
-    plt.plot(np.cumsum(np.sort(np.array(cpp_all))),
-             np.arange(len(cpp_all)), label="C++")
-    plt.legend()
-    plt.title("MQBF Benchmarks")
-    plt.ylabel("Problems Solved")
-    plt.savefig("Experiment/data/"+"K" + "overall.png")
+    data = {"CPP_time":cpp_times_all,
+            "haskell_time":haskell_times_all,
+            "haskell_optim_time":haskell_optim_times_all,
+            "CPP_result":cpp_results_all,
+            "haskell_result":haskell_results_all,
+            "haskell_optim_result":haskell_optim_results_all,
+            "file_path":  file_path_all}
+    
+    df = pd.DataFrame(data)
+    df.to_csv("Experiment/data/"+"overall"+'.csv')
