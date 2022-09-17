@@ -8,6 +8,7 @@
 #include <memory>
 #include <string>
 #include <unordered_map>
+#include <stack>
 
 using namespace std;
 
@@ -21,9 +22,13 @@ protected:
   void updateSolutionMemo(const shared_ptr<Bitset> &assumptions,
                           Solution solution);
 
+  int counter = 0;
+
 public:
   TrieformProverK();
   ~TrieformProverK();
+
+  virtual bool isK() {return true;};
 
   virtual Solution prove(literal_set assumptions = literal_set());
   virtual void preprocess();

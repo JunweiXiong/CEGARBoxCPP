@@ -80,13 +80,15 @@ protected:
   trie_map subtrieMap;
   unordered_set<int> futureModalities;
 
-  shared_ptr<Prover> prover = shared_ptr<Prover>(new MinisatProver());
+  
 
   vector<int> modality;
 
 public:
   Trieform();
   ~Trieform();
+
+  shared_ptr<Prover> prover = shared_ptr<Prover>(new MinisatProver());
 
   void propagateClauses(const shared_ptr<Formula> &formula);
   void overShadow(shared_ptr<Trieform> shadowTrie, int skipModality = 0);
@@ -122,6 +124,9 @@ public:
   shared_ptr<Trieform> getParent();
 
   bool isSatisfiable();
+
+  
+  virtual bool isK() {return false;};
 
   virtual Solution prove(literal_set assumptions = literal_set()) = 0;
   virtual void preprocess() = 0;

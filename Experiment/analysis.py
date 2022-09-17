@@ -37,10 +37,13 @@ for file in os.listdir(os.getcwd()+"/Experiment/data"):
         total_file_path = np.append(total_file_path, file_path)
 
         # find exception and timeout in each prover
+        cpp_succeed_index = np.where((CPP_result == "Satisfiable") | (CPP_result == "Unsatisfiable"))[0]
         cpp_exception_index = np.where(CPP_result == "exception")[0]
         cpp_timeout_index = np.where(CPP_result == "timeout")[0]
+        haskell_succeed_index = np.where((haskell_result == "Satisfiable") | (haskell_result == "Unsatisfiable"))[0]
         haskell_exception_index = np.where(haskell_result == "exception")[0]
         haskell_timeout_index = np.where(haskell_result == "timeout")[0]
+        haskell_optim_succeed_index = np.where((haskell_optim_result == "Satisfiable") | (haskell_optim_result == "Unsatisfiable"))[0]
         haskell_optim_exception_index = np.where(haskell_optim_result == "exception")[0]
         haskell_optim_timeout_index = np.where(haskell_optim_result == "timeout")[0]
 
@@ -51,6 +54,10 @@ for file in os.listdir(os.getcwd()+"/Experiment/data"):
         print("CPP           ","timeout",cpp_timeout_index.size,"exception",cpp_exception_index.size)
         print("Haskell       ","timeout",haskell_timeout_index.size,"exception",haskell_exception_index.size)
         print("Haskell optim ","timeout",haskell_optim_timeout_index.size,"exception",haskell_optim_exception_index.size)
+        
+        print("cpp succeed: ", cpp_succeed_index.size, " -> ","haskell succeed", np.where(((CPP_result=="Satisfiable")|(CPP_result=="Unsatisfiable"))&((haskell_result=="Satisfiable")|(haskell_result=="Unsatisfiable")))[0].size,"haskell_optim succeed",np.where(((CPP_result=="Satisfiable")|(CPP_result=="Unsatisfiable"))&((haskell_optim_result=="Satisfiable")|(haskell_optim_result=="Unsatisfiable")))[0].size)
+        print("cpp timeout: ", cpp_timeout_index.size, " -> ","haskell timeout", np.where((CPP_result=='timeout')&(haskell_result=='timeout'))[0].size, "haskell_optim timeout", np.where((CPP_result=='timeout')&(haskell_optim_result=='timeout'))[0].size)
+        print("cpp exception: ", cpp_timeout_index.size, " -> ","haskell succeed", np.where((CPP_result=='exception')&((haskell_result=="Satisfiable")|(haskell_result=="Unsatisfiable")))[0].size, "haskell_optim succeed", np.where((CPP_result=='exception')&((haskell_optim_result=="Satisfiable")|(haskell_optim_result=="Unsatisfiable")))[0].size)
         print("______________________________________________")
 
         # visual result
