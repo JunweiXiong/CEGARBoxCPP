@@ -115,7 +115,7 @@ void solve(arguments_struct &args) {
   auto read = chrono::steady_clock::now();
 #endif
 
-  cout << "start parsing" << endl;
+  // cout << "start parsing" << endl;
   shared_ptr<Formula> formula = ParseFormula(&args.filename).parseFormula();
   // string other = "a.p";
   // shared_ptr<Formula> correct = ParseFormula(&other).parseFormula();
@@ -125,7 +125,7 @@ void solve(arguments_struct &args) {
 
   
   if (args.valid) {
-    cout << "start not formula" << endl;
+    // cout << "start not formula" << endl;
     formula = Not::create(formula);
   }
 
@@ -139,7 +139,7 @@ void solve(arguments_struct &args) {
   if (args.verbose) {
     cout << "Parsed: " << formula->toString() << endl;
   }
-  cout << "start nnf" << endl;
+  // cout << "start nnf" << endl;
   formula = formula->negatedNormalForm();
   // correct = correct->negatedNormalForm();
 
@@ -156,7 +156,7 @@ void solve(arguments_struct &args) {
   if (args.verbose) {
     cout << "Negated normal form: " << formula->toString() << endl;
   }
-  cout << "start simplify" << endl;
+  // cout << "start simplify" << endl;
   formula = formula->simplify();
   // correct = correct->simplify();
 
@@ -173,7 +173,7 @@ void solve(arguments_struct &args) {
   if (args.verbose) {
     cout << "Simplified: " << formula->toString() << endl;
   }
-  cout << "start modalflatten" << endl;
+  // cout << "start modalflatten" << endl;
   formula = formula->modalFlatten();
   // correct = correct->modalFlatten();
 
@@ -190,7 +190,7 @@ void solve(arguments_struct &args) {
   if (args.verbose) {
     cout << "Flattenned: " << formula->toString() << endl;
   }
-  cout << "start maketrie" << endl;
+  // cout << "start maketrie" << endl;
   shared_ptr<Trieform> trie = TrieformFactory::makeTrie(formula, args.settings);
   // shared_ptr<Trieform> otherTrie =
   //     TrieformFactory::makeTrie(correct, args.settings);
@@ -214,7 +214,7 @@ void solve(arguments_struct &args) {
 #endif
   // cout << "Initial trie:" << endl << trie->toString() << endl;
   // cout << "Correct trie:" << endl << otherTrie->toString() << endl;
-  cout << "start reduceclauses" << endl;
+  // cout << "start reduceclauses" << endl;
   trie->reduceClauses();
   // otherTrie->reduceClauses();
 
@@ -241,7 +241,7 @@ void solve(arguments_struct &args) {
   if (args.tense) {
     trie->preprocessTense();
   }
-  cout << "start preprocess" << endl;
+  // cout << "start preprocess" << endl;
   trie->preprocess();
   // cout << "Processed trie:" << endl << trie->toString() << endl;
   // otherTrie->preprocess();
@@ -257,10 +257,10 @@ void solve(arguments_struct &args) {
     cout << "Preprocessed trie" << endl;
     cout << "Processed trie:" << endl << trie->toString() << endl;
   }
-  cout << "start removeTrueFalse" << endl;
+  // cout << "start removeTrueFalse" << endl;
   trie->removeTrueAndFalse();
   // otherTrie->removeTrueAndFalse();
-  cout << "start preparesat" << endl;
+  // cout << "start preparesat" << endl;
   trie->prepareSAT();
   // otherTrie->prepareSAT();
 
@@ -277,7 +277,7 @@ void solve(arguments_struct &args) {
   }
 
 
-  cout << "start issatisfiable" << endl;
+  // cout << "start issatisfiable" << endl;
   bool satisfiable = trie->isSatisfiable();
   if (args.valid) {
     cout << (satisfiable ? "Invalid" : "Valid") << endl;

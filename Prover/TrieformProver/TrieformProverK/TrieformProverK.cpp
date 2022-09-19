@@ -105,7 +105,7 @@ Solution TrieformProverK::prove(literal_set assumptions) {
   bool log = true;
 
   while (!trie_stack.empty()){
-    if (log) {cout << trie_stack.size();};
+    // if (log) {cout << trie_stack.size();};
 
     // extract the node from frontier
     shared_ptr<TrieformProverK> current_trie = trie_stack.top();
@@ -152,7 +152,7 @@ Solution TrieformProverK::prove(literal_set assumptions) {
         return current_solution;
       }
       // update the parent
-      if (log) {cout << " unsatisfiable, update parent" << endl;};
+      // if (log) {cout << " unsatisfiable, update parent" << endl;};
       if (diamond_type.getName()=="not_subset_diamond"){
         vector<literal_set> badImplications = trie_stack.top()->prover->getNotProblemBoxClauses(
           current_modality, current_solution.conflict);
@@ -192,7 +192,7 @@ Solution TrieformProverK::prove(literal_set assumptions) {
         modal_literal_map triggeredDiamonds = current_trie->prover->getTriggeredDiamondClauses();
         triggeredDiamonds_stack.top() = triggeredDiamonds;
         if (triggeredDiamonds.size() == 0) {
-          if (log) {cout << " satisfiable, backtrack (no trigger)" << endl;};
+          // if (log) {cout << " satisfiable, backtrack (no trigger)" << endl;};
           current_trie->updateSolutionMemo(assumptionsBitset, current_solution);
   
           // make sure it's not the root trie
@@ -205,8 +205,6 @@ Solution TrieformProverK::prove(literal_set assumptions) {
           while(static_cast<int>(trie_stack.size())==parent_index+1){
             // check if is the root trie
             if (static_cast<int>(trie_stack.size())==1){
-              cout << "if (static_cast<int>(trie_stack.size())==1){" << endl;
-              cout << static_cast<int>(solution_stack.size()) << endl;
               return solution_stack.top();
             }
 
@@ -252,7 +250,7 @@ Solution TrieformProverK::prove(literal_set assumptions) {
             
             if (isSubsetOf(triggeredDiamonds[modalitySubtrie.first],
                           triggeredBoxes[modalitySubtrie.first])) {
-              if (log) {cout << " satisfiable, expand_a 1 ";};
+              // if (log) {cout << " satisfiable, expand_a 1 ";};
               // The fired diamonds are a subset of the boxes - we thus can create one
               // world.
               literal_set childAssumptions = literal_set(triggeredBoxes[modalitySubtrie.first]);
@@ -271,7 +269,7 @@ Solution TrieformProverK::prove(literal_set assumptions) {
               // create one world for each diamond clause
               diamond_queue diamondPriority =
                   current_trie->prover->getPrioritisedTriggeredDiamonds(modalitySubtrie.first);
-              if (log) {cout << " satisfiable, expand_b " << diamondPriority.size();};
+              // if (log) {cout << " satisfiable, expand_b " << diamondPriority.size();};
 
               stack<Literal> new_diamondPriority;
               while (!diamondPriority.empty()) {
@@ -298,11 +296,11 @@ Solution TrieformProverK::prove(literal_set assumptions) {
                 modality_stack.push(modalitySubtrie.first);
               }
             }
-            if (log) {cout << " " << endl;};
+            // if (log) {cout << " " << endl;};
           }
         }
       }else{
-        if (log) {cout << " satisfiable, backtrack (in memory)" << endl;};
+        // if (log) {cout << " satisfiable, backtrack (in memory)" << endl;};
         // backtrack
         while(static_cast<int>(trie_stack.size())==parent_index+1){
           // check if is the root trie
@@ -343,7 +341,6 @@ Solution TrieformProverK::prove(literal_set assumptions) {
   cout << "error end" << endl;
   return prover->solve(assumptions);
 }
-
 
 
 
