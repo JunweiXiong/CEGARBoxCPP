@@ -1,0 +1,3327 @@
+start parsing
+start nnf
+start simplify
+start modalflatten
+start maketrie
+start reduceclauses
+start preprocess
+start removeTrueFalse
+start preparesat
+start issatisfiable
+expand_b34
+expand_b4
+unsatisfiable
+clause learning
+expand_b4
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b4
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b4
+unsatisfiable
+clause learning
+expand_b5
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b5
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b8
+unsatisfiable
+clause learning
+unsatisfiable
+clause learning
+expand_b34
+expand_b7
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b8
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b7
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+unsatisfiable
+clause learning
+unsatisfiable
+clause learning
+expand_b34
+expand_b11
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b11
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b12
+unsatisfiable
+clause learning
+expand_b14
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b15
+unsatisfiable
+clause learning
+expand_b15
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b14
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b14
+unsatisfiable
+clause learning
+unsatisfiable
+clause learning
+expand_b35
+unsatisfiable
+clause learning
+expand_b35
+expand_b12
+unsatisfiable
+clause learning
+expand_b10
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b9
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b9
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b36
+expand_b7
+unsatisfiable
+clause learning
+expand_b6
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+unsatisfiable
+clause learning
+expand_b37
+expand_b9
+unsatisfiable
+clause learning
+expand_b10
+unsatisfiable
+clause learning
+unsatisfiable
+clause learning
+expand_b38
+expand_b10
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b11
+unsatisfiable
+clause learning
+expand_b10
+unsatisfiable
+clause learning
+expand_b11
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+expand_b15
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b14
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b14
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+unsatisfiable
+clause learning
+expand_b38
+expand_b14
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b11
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b10
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b14
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+expand_b14
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+expand_b9
+unsatisfiable
+clause learning
+expand_b7
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b13
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b13
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b12
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b13
+unsatisfiable
+clause learning
+expand_b14
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b14
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b9
+unsatisfiable
+clause learning
+expand_b9
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b8
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b8
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b9
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b13
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b13
+unsatisfiable
+clause learning
+expand_b13
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b12
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+expand_b12
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b11
+unsatisfiable
+clause learning
+expand_b11
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b11
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b9
+unsatisfiable
+clause learning
+expand_b9
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b8
+unsatisfiable
+clause learning
+expand_b8
+unsatisfiable
+clause learning
+expand_b10
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b7
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+expand_b7
+unsatisfiable
+clause learning
+expand_b7
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b7
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b6
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+expand_b6
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b5
+unsatisfiable
+clause learning
+unsatisfiable
+clause learning
+expand_b38
+expand_b7
+satisfible, no trigger
+unsatisfiable
+clause learning
+unsatisfiable
+clause learning
+expand_b39
+expand_b7
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b7
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+unsatisfiable
+clause learning
+expand_b40
+unsatisfiable
+clause learning
+expand_b44
+expand_b6
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b6
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b5
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b4
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b4
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+expand_b4
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+expand_b6
+unsatisfiable
+clause learning
+expand_b8
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b7
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b9
+unsatisfiable
+clause learning
+expand_b9
+unsatisfiable
+clause learning
+expand_b7
+unsatisfiable
+clause learning
+expand_b7
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+expand_b9
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b8
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b9
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b7
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b6
+unsatisfiable
+clause learning
+expand_b6
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b8
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+expand_b9
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+expand_b10
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b10
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b10
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+expand_b8
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b7
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+expand_b4
+unsatisfiable
+clause learning
+expand_b3
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b6
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b8
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+expand_b7
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b8
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b7
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b10
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+expand_b9
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b7
+satisfible, no trigger
+unsatisfiable
+clause learning
+unsatisfiable
+clause learning
+expand_b42
+expand_b11
+unsatisfiable
+clause learning
+expand_b10
+unsatisfiable
+clause learning
+expand_b9
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b9
+unsatisfiable
+clause learning
+expand_b10
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b11
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b10
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b10
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b10
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b9
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b9
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b9
+unsatisfiable
+clause learning
+expand_b11
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b12
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b10
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b7
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b9
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b9
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b11
+unsatisfiable
+clause learning
+expand_b11
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b11
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b12
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+expand_b13
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b13
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b14
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b14
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b13
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b12
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b11
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b13
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b12
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b11
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b13
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b12
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+expand_b14
+unsatisfiable
+clause learning
+expand_b11
+unsatisfiable
+clause learning
+expand_b12
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b11
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b11
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b10
+unsatisfiable
+clause learning
+expand_b10
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b9
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b13
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b13
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+expand_b12
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+expand_b12
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+expand_b15
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b15
+unsatisfiable
+clause learning
+expand_b14
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b13
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b12
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b10
+unsatisfiable
+clause learning
+expand_b12
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b11
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+expand_b13
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b12
+satisfible, no trigger
+unsatisfiable
+clause learning
+unsatisfiable
+clause learning
+expand_b43
+satisfiable, in memory
+satisfiable, in memory
+expand_b12
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b13
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b12
+unsatisfiable
+clause learning
+expand_b12
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b11
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b11
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b10
+unsatisfiable
+clause learning
+expand_b11
+satisfible, no trigger
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b11
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b10
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b9
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b11
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b12
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b12
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b44
+expand_b12
+unsatisfiable
+clause learning
+expand_b12
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b10
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+unsatisfiable
+clause learning
+unsatisfiable
+clause learning
+expand_b46
+expand_b10
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+expand_b12
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+expand_b12
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b12
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b13
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b12
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b11
+unsatisfiable
+clause learning
+expand_b10
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b10
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b11
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b12
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b11
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b10
+unsatisfiable
+clause learning
+expand_b9
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b9
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b9
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b8
+unsatisfiable
+clause learning
+expand_b15
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b16
+unsatisfiable
+clause learning
+expand_b16
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b13
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b10
+unsatisfiable
+clause learning
+expand_b11
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b10
+unsatisfiable
+clause learning
+expand_b9
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b9
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b9
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b9
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+unsatisfiable
+clause learning
+unsatisfiable
+clause learning
+expand_b46
+expand_b8
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b8
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b9
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b9
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+expand_b10
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b9
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b8
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b8
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b10
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b11
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b12
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b10
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b8
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b7
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b9
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b17
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b13
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+expand_b15
+unsatisfiable
+clause learning
+expand_b15
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b15
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b12
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b10
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b14
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b12
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+expand_b15
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b12
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b11
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b7
+unsatisfiable
+clause learning
+expand_b7
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b6
+satisfiable, in memory
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b6
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b5
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+expand_b10
+unsatisfiable
+clause learning
+expand_b10
+unsatisfiable
+clause learning
+expand_b11
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b12
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b47
+expand_b14
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b13
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b12
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b11
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+expand_b9
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+expand_b11
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+unsatisfiable
+clause learning
+expand_b48
+expand_b10
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b10
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b10
+unsatisfiable
+clause learning
+expand_b9
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+unsatisfiable
+clause learning
+unsatisfiable
+clause learning
+expand_b52
+expand_b9
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+expand_b18
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b9
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b8
+unsatisfiable
+clause learning
+expand_b10
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b6
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b6
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b6
+unsatisfiable
+clause learning
+expand_b6
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b8
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b9
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b7
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b9
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+expand_b10
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+expand_b10
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b9
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b17
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b10
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b8
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+expand_b11
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b11
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b8
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b7
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b10
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b13
+unsatisfiable
+clause learning
+expand_b12
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b16
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b9
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b14
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b11
+unsatisfiable
+clause learning
+expand_b10
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b9
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b9
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+expand_b12
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b15
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b11
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b11
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b15
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b10
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b10
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b12
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+expand_b9
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b9
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b16
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b16
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b16
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+unsatisfiable
+clause learning
+expand_b52
+expand_b15
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b9
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b16
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b8
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+unsatisfiable
+clause learning
+expand_b53
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b11
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b7
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b11
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+expand_b11
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b11
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b10
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b10
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b10
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b16
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b13
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b15
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b15
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b15
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+expand_b17
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b16
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+unsatisfiable
+clause learning
+expand_b14
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+expand_b15
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b14
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b13
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b8
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b10
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b11
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b10
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b12
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b13
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b16
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b13
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+expand_b8
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b9
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b10
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b10
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b8
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+expand_b13
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+expand_b11
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b10
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b9
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b13
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b15
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b16
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b17
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+expand_b17
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b15
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b16
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+unsatisfiable
+clause learning
+expand_b14
+unsatisfiable
+clause learning
+expand_b13
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b14
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+expand_b11
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b13
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b14
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b12
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b13
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b15
+unsatisfiable
+clause learning
+expand_b16
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+expand_b11
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+expand_b11
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+expand_b9
+unsatisfiable
+clause learning
+expand_b7
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+satisfible, no trigger
+expand_b7
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+expand_b9
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+expand_b8
+satisfible, no trigger
+satisfible, no trigger
+satisfiable, in memory
+satisfible, no trigger
+satisfiable, in memory
+satisfiable, in memory
+satisfible, no trigger
+satisfible, no trigger
+Satisfiable

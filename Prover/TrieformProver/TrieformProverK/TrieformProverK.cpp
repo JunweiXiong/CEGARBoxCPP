@@ -73,6 +73,8 @@ void TrieformProverK::prepareSAT(name_set extra) {
 
 
 
+
+
 Solution TrieformProverK::prove(literal_set assumptions) {
   stack<shared_ptr<TrieformProverK>> trie_stack;
   stack<literal_set> assumption_stack;
@@ -138,6 +140,7 @@ Solution TrieformProverK::prove(literal_set assumptions) {
       while (static_cast<int>(trie_stack.size())>parent_index){
         trie_stack.pop();
         assumption_stack.pop();
+        solution_stack.pop();
         triggeredDiamonds_stack.pop();
         triggeredBoxes_stack.pop();
         parent_index_stack.pop();
@@ -202,6 +205,8 @@ Solution TrieformProverK::prove(literal_set assumptions) {
           while(static_cast<int>(trie_stack.size())==parent_index+1){
             // check if is the root trie
             if (static_cast<int>(trie_stack.size())==1){
+              cout << "if (static_cast<int>(trie_stack.size())==1){" << endl;
+              cout << static_cast<int>(solution_stack.size()) << endl;
               return solution_stack.top();
             }
 
@@ -268,10 +273,16 @@ Solution TrieformProverK::prove(literal_set assumptions) {
                   current_trie->prover->getPrioritisedTriggeredDiamonds(modalitySubtrie.first);
               if (log) {cout << " satisfiable, expand_b " << diamondPriority.size();};
 
+              stack<Literal> new_diamondPriority;
               while (!diamondPriority.empty()) {
-                // Create a world for each diamond
-                Literal diamond = diamondPriority.top().literal;
+                new_diamondPriority.push(diamondPriority.top().literal);
                 diamondPriority.pop();
+              }
+
+              while (!new_diamondPriority.empty()) {
+                // Create a world for each diamond
+                Literal diamond = new_diamondPriority.top();
+                new_diamondPriority.pop();
 
                 literal_set childAssumptions = literal_set(triggeredBoxes[modalitySubtrie.first]);
                 childAssumptions.insert(diamond);
@@ -319,6 +330,7 @@ Solution TrieformProverK::prove(literal_set assumptions) {
 
         trie_stack.pop();
         assumption_stack.pop();
+        solution_stack.pop();
         triggeredDiamonds_stack.pop();
         triggeredBoxes_stack.pop();
         parent_index_stack.pop();
@@ -338,148 +350,5 @@ Solution TrieformProverK::prove(literal_set assumptions) {
 
 
 
-// Solution TrieformProverK::prove(literal_set assumptions) {
 
-//   bool log = true;
-  
-//   // Check solution memo
-  
-//   shared_ptr<Bitset> assumptionsBitset =
-//       convertAssumptionsToBitset(assumptions);
-//   LocalSolutionMemoResult memoResult = localMemo.getFromMemo(assumptionsBitset);
-  
-//   if (memoResult.inSatMemo) {
-//     if (log) {
-//       if (memoResult.result.satisfiable){
-//         cout << "satisfiable, in memory" << endl;
-//       }else{
-//         cout << "unsatisfiable, in memory" << endl;
-//       }
-//     };
-//     return memoResult.result;
-//   }
-  
-//   // Solve locally
-//   Solution solution = prover->solve(assumptions);
-  
-//   if (!solution.satisfiable) {
-//     updateSolutionMemo(assumptionsBitset, solution);
-//     if (log) {cout << "unsatisfiable" << endl;};
-//     return solution;
-//   }
-  
-//   prover->calculateTriggeredDiamondsClauses();
-//   modal_literal_map triggeredDiamonds = prover->getTriggeredDiamondClauses();
-  
-//   // If there are no fired diamonds, it is satisfiable
-//   if (triggeredDiamonds.size() == 0) {
-//     updateSolutionMemo(assumptionsBitset, solution);
-//     if (log) {cout << "satisfible, no trigger" << endl;};
-//     return solution;
-//   }
-  
-//   prover->calculateTriggeredBoxClauses();
-//   modal_literal_map triggeredBoxes = prover->getTriggeredBoxClauses();
-  
-//   for (auto modalitySubtrie : subtrieMap) {
-//     if (!modalitySubtrie.second->isK()){
-//       cout << "no" << endl;
-//     }
-//     // shared_ptr<TrieformProverK> tk = dynamic_pointer_cast<TrieformProverK>(modalitySubtrie.second);
-//     // cout << tk->convertAssumptionsToBitset(assumptions);
 
-//     // Handle each modality
-//     if (triggeredDiamonds[modalitySubtrie.first].size() == 0) {
-//       // If there are no triggered diamonds of a certain modality we can skip it
-//       continue;
-//     }
-//     if (isSubsetOf(triggeredDiamonds[modalitySubtrie.first],
-//                    triggeredBoxes[modalitySubtrie.first])) {
-//       // The fired diamonds are a subset of the boxes - we thus can create one
-//       // world.
-//       if (log) {cout << "expand_a " << endl;};
-//       Solution childSolution =
-//           modalitySubtrie.second->prove(triggeredBoxes[modalitySubtrie.first]);
-//       // If the one world solution is satisfiable, then we're all good
-//       if (childSolution.satisfiable) {
-//         continue;
-//       }
-//       // Otherwise, as the diamonds are a subset of the boxes, the left
-//       // implications of the problem box clauses cannot be true with any diamond
-//       // clause of this modality
-//       vector<literal_set> badImplications = prover->getNotProblemBoxClauses(
-//           modalitySubtrie.first, childSolution.conflict);
-//       badImplications.push_back(
-//           prover->getNotAllDiamondLeft(modalitySubtrie.first));
-//       // Add ~leftDiamond=>\/~leftProbemBox
-//       for (literal_set learnClause : generateClauses(badImplications)) {
-//         prover->addClause(learnClause);
-//       }
-//       // Find new result
-//       if (log) {cout << "clause learning" << endl;};
-//       return prove(assumptions);
-//     } else {
-//       // The fired diamonds are not a subset of the fired boxes, we need to
-//       // create one world for each diamond clause
-//       diamond_queue diamondPriority =
-//           prover->getPrioritisedTriggeredDiamonds(modalitySubtrie.first);
-
-//       if (log) {cout << "expand_b " << diamondPriority.size() << endl;};
-//       while (!diamondPriority.empty()) {
-//         // Create a world for each diamond
-//         Literal diamond = diamondPriority.top().literal;
-//         diamondPriority.pop();
-
-//         literal_set childAssumptions =
-//             literal_set(triggeredBoxes[modalitySubtrie.first]);
-//         childAssumptions.insert(diamond);
-
-//         // Run the solver for the next level
-//         Solution childSolution =
-//             modalitySubtrie.second->prove(childAssumptions);
-
-//         // If it is satisfiable create the next world
-//         if (childSolution.satisfiable) {
-//           continue;
-//         }
-
-//         // Otherwise there must have been a conflict
-//         vector<literal_set> badImplications = prover->getNotProblemBoxClauses(
-//             modalitySubtrie.first, childSolution.conflict);
-
-//         if (childSolution.conflict.find(diamond) !=
-//             childSolution.conflict.end()) {
-//           // The diamond clause, either on its own or together with box clauses,
-//           // caused a conflict. We must add diamond implies OR NOT problem
-//           // box clauses.
-//           prover->updateLastFail(diamond);
-//           badImplications.push_back(
-//               prover->getNotDiamondLeft(modalitySubtrie.first, diamond));
-
-//           for (literal_set learnClause : generateClauses(badImplications)) {
-//             prover->addClause(learnClause);
-//           }
-
-//           // Find new result
-//           if (log) {cout << "clause learning" << endl;};
-//           return prove(assumptions);
-//         } else {
-//           // Only the box clauses caused a conflict, so we must add each diamond
-//           // clause implies OR NOT problem box lefts
-//           badImplications.push_back(
-//               prover->getNotAllDiamondLeft(modalitySubtrie.first));
-//           // Add ~leftDiamond=>\/~leftProbemBox
-//           for (literal_set learnClause : generateClauses(badImplications)) {
-//             prover->addClause(learnClause);
-//           }
-//           // Find new result
-//           if (log) {cout << "clause learning" << endl;};
-//           return prove(assumptions);
-//         }
-//       }
-//     }
-//   }
-//   // If we reached here the solution is satisfiable under all modalities
-//   updateSolutionMemo(assumptionsBitset, solution);
-//   return solution;
-// }
