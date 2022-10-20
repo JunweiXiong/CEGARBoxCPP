@@ -102,7 +102,7 @@ Solution TrieformProverK::prove(literal_set assumptions) {
 
 
   // test mode
-  bool log = true;
+  bool log = false;
 
   while (!trie_stack.empty()){
     // if (log) {cout << trie_stack.size();};
@@ -119,6 +119,107 @@ Solution TrieformProverK::prove(literal_set assumptions) {
     // local rule
     shared_ptr<Bitset> assumptionsBitset =
       current_trie->convertAssumptionsToBitset(current_assumption);
+
+    // print out assumption   
+    cout << "----------------------------" << endl;
+
+    cout << "total assumption start" << endl;
+    for (auto x : trie_stack.top()->idMap){
+      cout << x.first << x.second << endl;
+    }
+    cout << "total assumption end" << endl;
+    
+    cout << "assumption size: " << trie_stack.top()->assumptionsSize << endl;
+    cout << assumption_stack.size() << " assumption start" << endl;
+    for (auto i : current_assumption){
+      cout << i.getName() << i.getPolarity() << " ";
+    }
+    cout << endl;
+    cout << assumption_stack.size() << " assumption end" << endl;
+
+    
+    // p1 & p2 & []p3 & <>p4 & <>p5 & <>~p6
+    // if (trie_stack.size() >1 ){
+    //   cout << "memory test p3" << endl;
+    //   literal_set test_assumption;
+    //   test_assumption.insert(Literal("p3",1));
+    //   shared_ptr<Bitset> test_assumptionsBitset =
+    //     current_trie->convertAssumptionsToBitset(test_assumption);
+    //   LocalSolutionMemoResult test_memoResult = current_trie->localMemo.getFromMemo(test_assumptionsBitset);
+    //   if (test_memoResult.inSatMemo){
+    //     cout << "in memory" << endl;
+    //   }else{
+    //     cout << "not in memory" << endl;
+    //   }
+    //   cout << "memory test p4" << endl;
+    //   test_assumption.clear();
+    //   test_assumption.insert(Literal("p4",1));
+    //   test_assumptionsBitset =
+    //     current_trie->convertAssumptionsToBitset(test_assumption);
+    //   test_memoResult = current_trie->localMemo.getFromMemo(test_assumptionsBitset);
+    //   if (test_memoResult.inSatMemo){
+    //     cout << "in memory" << endl;
+    //   }else{
+    //     cout << "not in memory" << endl;
+    //   }
+    //   cout << "memory test p5" << endl;
+    //   test_assumption.clear();
+    //   test_assumption.insert(Literal("p5",1));
+    //   test_assumptionsBitset =
+    //     current_trie->convertAssumptionsToBitset(test_assumption);
+    //   test_memoResult = current_trie->localMemo.getFromMemo(test_assumptionsBitset);
+    //   if (test_memoResult.inSatMemo){
+    //     cout << "in memory" << endl;
+    //   }else{
+    //     cout << "not in memory" << endl;
+    //   }
+    //   cout << "memory test p6" << endl;
+    //   test_assumption.clear();
+    //   test_assumption.insert(Literal("p6",1));
+    //   test_assumptionsBitset =
+    //     current_trie->convertAssumptionsToBitset(test_assumption);
+    //   test_memoResult = current_trie->localMemo.getFromMemo(test_assumptionsBitset);
+    //   if (test_memoResult.inSatMemo){
+    //     cout << "in memory" << endl;
+    //   }else{
+    //     cout << "not in memory" << endl;
+    //   }
+    //   cout << "memory test p60" << endl;
+    //   test_assumption.clear();
+    //   test_assumption.insert(Literal("p6",0));
+    //   test_assumptionsBitset =
+    //     current_trie->convertAssumptionsToBitset(test_assumption);
+    //   test_memoResult = current_trie->localMemo.getFromMemo(test_assumptionsBitset);
+    //   if (test_memoResult.inSatMemo){
+    //     cout << "in memory" << endl;
+    //   }else{
+    //     cout << "not in memory" << endl;
+    //   }
+    //   cout << "memory test p5 p4" << endl;
+    //   test_assumption.clear();
+    //   test_assumption.insert(Literal("p5",1));
+    //   test_assumption.insert(Literal("p4",1));
+    //   test_assumptionsBitset =
+    //     current_trie->convertAssumptionsToBitset(test_assumption);
+    //   test_memoResult = current_trie->localMemo.getFromMemo(test_assumptionsBitset);
+    //   if (test_memoResult.inSatMemo){
+    //     cout << "in memory" << endl;
+    //   }else{
+    //     cout << "not in memory" << endl;
+    //   }
+    //   cout << "memory test p5 p60" << endl;
+    //   test_assumption.clear();
+    //   test_assumption.insert(Literal("p5",1));
+    //   test_assumption.insert(Literal("p6",0));
+    //   test_assumptionsBitset =
+    //     current_trie->convertAssumptionsToBitset(test_assumption);
+    //   test_memoResult = current_trie->localMemo.getFromMemo(test_assumptionsBitset);
+    //   if (test_memoResult.inSatMemo){
+    //     cout << "in memory" << endl;
+    //   }else{
+    //     cout << "not in memory" << endl;
+    //   }
+    // }
     
     LocalSolutionMemoResult memoResult = current_trie->localMemo.getFromMemo(assumptionsBitset);
 

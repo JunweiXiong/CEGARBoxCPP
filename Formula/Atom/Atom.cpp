@@ -20,6 +20,8 @@ shared_ptr<Formula> Atom::simplify() { return shared_from_this(); }
 
 shared_ptr<Formula> Atom::modalFlatten() { return shared_from_this(); }
 
+shared_ptr<Formula> Atom::s4reduction() { return shared_from_this(); }
+
 shared_ptr<Formula> Atom::create(string name) {
   return shared_ptr<Formula>(new Atom(name));
 }

@@ -79,6 +79,41 @@ shared_ptr<Formula> Diamond::modalFlatten() {
   return shared_from_this();
 }
 
+shared_ptr<Formula> Diamond::s4reduction(){
+  power_ = 1;
+  subformula_ = subformula_->s4reduction();
+
+  switch (subformula_->getType()) {
+
+  case FDiamond: {
+    Diamond *diamondFormula = dynamic_cast<Diamond *>(subformula_.get());
+    if (diamondFormula->getModality() == modality_) {
+      subformula_ = diamondFormula->getSubformula();
+    }
+    return shared_from_this();
+  }
+  case FOr: {
+    Or *orFormula = dynamic_cast<Or *>(subformula_.get());
+
+    formula_set orFormulas = orFormula->getSubformulas();
+
+    formula_set newOrSet(orFormulas.size());
+    for (shared_ptr<Formula> formula : orFormulas){
+      shared_ptr<Formula> diamondformula = Diamond::create(modality_, power_, formula);
+      newOrSet.insert(diamondformula);
+    }
+
+    shared_ptr<Formula> newOrFormula = Or::create(newOrSet);
+    
+    return newOrFormula->s4reduction();
+  }
+
+  default:
+    return shared_from_this();
+  }
+
+}
+
 shared_ptr<Formula> Diamond::create(int modality, int power,
                                     shared_ptr<Formula> subformula) {
   if (power == 0) {

@@ -78,6 +78,42 @@ shared_ptr<Formula> Box::modalFlatten() {
   return shared_from_this();
 }
 
+shared_ptr<Formula> Box::s4reduction(){
+  power_ = 1;
+  subformula_ = subformula_->s4reduction();
+
+  switch (subformula_->getType()) {
+
+  case FBox: {
+    Box *boxFormula = dynamic_cast<Box *>(subformula_.get());
+    if (boxFormula->getModality() == modality_) {
+      subformula_ = boxFormula->getSubformula();
+    }
+    return shared_from_this();
+  }
+  case FAnd: {
+    And *andFormula = dynamic_cast<And *>(subformula_.get());
+
+    formula_set andFormulas = andFormula->getSubformulas();
+
+    formula_set newAndSet(andFormulas.size());
+    for (shared_ptr<Formula> formula : andFormulas){
+      shared_ptr<Formula> boxformula = Box::create(modality_, power_, formula);
+      newAndSet.insert(boxformula);
+    }
+
+    shared_ptr<Formula> newAndFormula = And::create(newAndSet);
+    
+    return newAndFormula->s4reduction();
+  }
+
+  default:
+    return shared_from_this();
+  }
+
+}
+
+
 shared_ptr<Formula> Box::create(int modality, int power,
                                 const shared_ptr<Formula> &subformula) {
   if (power == 0) {

@@ -136,6 +136,18 @@ shared_ptr<Formula> Or::modalFlatten() {
   return shared_from_this();
 }
 
+
+shared_ptr<Formula> Or::s4reduction(){
+  formula_set newOrSet(orSet_.size());
+  
+  for (shared_ptr<Formula> formula : orSet_) {
+    newOrSet.insert(formula->s4reduction());
+  }
+  
+  orSet_ = newOrSet;
+  return shared_from_this();
+}
+
 shared_ptr<Formula> Or::create(formula_set orSet) {
   shared_ptr<Formula> trueFormula = True::create();
   if (orSet.count(trueFormula)) {

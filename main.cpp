@@ -25,8 +25,8 @@
 
 using namespace std;
 
-const char *argp_program_version = "CEGARBox 0.1.0";
-const char *argp_program_bug_address = "robert.mcarthur@anu.edu.au";
+const char *argp_program_version = "CEGARBox 0.1.1";
+const char *argp_program_bug_address = "u6757090@anu.edu.au";
 static char doc[] = "An efficient theorem prover for modal logic.";
 static char args_doc[] = "";
 static struct argp_option options[] = {
@@ -139,6 +139,31 @@ void solve(arguments_struct &args) {
   if (args.verbose) {
     cout << "Parsed: " << formula->toString() << endl;
   }
+
+  if (args.settings.reflexive && args.settings.transitive){
+    formula = formula->s4reduction();
+    if (args.verbose) {
+    cout << "S4 reduction: " << formula->toString() << endl;
+    }
+    formula = formula->negatedNormalForm();
+    formula = formula->simplify();
+    formula = formula->modalFlatten();
+    shared_ptr<Trieform> trie = TrieformFactory::makeTrie(formula, args.settings);
+    trie->reduceClauses();
+    trie->preprocess();
+    trie->removeTrueAndFalse();
+    trie -> prepareSAT();
+    bool satisfiable = trie->isSatisfiable();
+  if (args.valid) {
+    cout << (satisfiable ? "Invalid" : "Valid") << endl;
+  } else {
+    cout << (satisfiable ? "Satisfiable" : "Unsatisfiable") << endl;
+  }
+    return;
+  }
+
+
+
   // cout << "start nnf" << endl;
   formula = formula->negatedNormalForm();
   // correct = correct->negatedNormalForm();

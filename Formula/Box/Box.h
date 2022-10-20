@@ -6,6 +6,7 @@
 #include "../FEnum/FEnum.h"
 #include "../Formula/Formula.h"
 #include "../True/True.h"
+#include "../And/And.h"
 #include <functional>
 #include <iostream>
 #include <memory>
@@ -36,6 +37,7 @@ public:
   shared_ptr<Formula> negate();
   shared_ptr<Formula> simplify();
   shared_ptr<Formula> modalFlatten();
+  shared_ptr<Formula> s4reduction();
 
   shared_ptr<Formula> clone() const;
 

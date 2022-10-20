@@ -10,6 +10,7 @@
 
 using namespace std;
 
+
 class Formula {
 public:
   Formula();
@@ -22,6 +23,7 @@ public:
   virtual shared_ptr<Formula> negate() = 0;
   virtual shared_ptr<Formula> simplify() = 0;
   virtual shared_ptr<Formula> modalFlatten() = 0;
+  virtual shared_ptr<Formula> s4reduction() = 0;
 
   virtual shared_ptr<Formula> clone() const = 0;
 

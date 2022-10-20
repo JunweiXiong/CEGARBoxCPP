@@ -8,6 +8,10 @@ for root, subdirs, files in os.walk(os.getcwd()):
             text = text.replace("~ ", "~")
             text = text.replace("[r1", "[")
             text = text.replace("<r1", "<")
+            # for lwb s4
+            text = text.replace("box", "[]") 
+            text = text.replace("dia", "<>") 
+            text = text.replace("v", "|") 
             with open(root+file.replace(".intohylo", ".hf"), "w") as f:
                 f.write(text)
             text = text.replace("true", "$true")

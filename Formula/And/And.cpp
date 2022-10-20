@@ -135,6 +135,18 @@ shared_ptr<Formula> And::modalFlatten() {
   return shared_from_this();
 }
 
+shared_ptr<Formula> And::s4reduction(){
+  formula_set newAndSet(andSet_.size());
+  
+  for (shared_ptr<Formula> formula : andSet_) {
+    newAndSet.insert(formula->s4reduction());
+  }
+  
+  andSet_ = newAndSet;
+  return shared_from_this();
+}
+
+
 shared_ptr<Formula> And::create(formula_set andSet) {
   shared_ptr<Formula> falseFormula = False::create();
   if (andSet.count(falseFormula)) {
